@@ -4,9 +4,9 @@ Iniciei a criação desse projeto já faz algum tempo com o objetivo de ter uma 
 que necessitem dos conceitos e arquitetura utilizados aqui, já ter um ponto de partida. Na época devido ao trabalho acabei
 deixando esse projeto de lado, porém agora estou retomando com o objetivo de ter uma API para utilizar em meus projetos de estudo React, 
 Angular, entre outros, ter um projeto legal para apresentar quando estiver em busca de novas oportunidades e ter um projeto onde
-aplico diversos conceitos, de forma que eu possa ajudar amigos e colegas de trabalho que são que desenvolvedores junior, pleno ou 
-seniors que gostariam de se atualizar e aprender algum dos conceitos aplicados. Tendo uma aplicação rodando acredito que ajuda bastante
-na hora de explicar e serve também como material de apoio.
+aplico diversos conceitos. 
+Dessa forma acredito que posso ajudar amigos e colegas de trabalho que são que desenvolvedores junior, pleno ou 
+seniors, que gostariam de se atualizar e aprender alguns dos conceitos aplicados nesse projeto. Tendo uma aplicação rodando acredito que seja o melhor caminho para explicar e realizar demonstrações, e ter um material de apoio.
 
 Nesse projeto foram aplicados diversos conceitos e ferramentas como: MVC, DDD, TDD, Web API, JWT, Identity (isolado), Logs, IoC, 
 swagger, entre outros.
