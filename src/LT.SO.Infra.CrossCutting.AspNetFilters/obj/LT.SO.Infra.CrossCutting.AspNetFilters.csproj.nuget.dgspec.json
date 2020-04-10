@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.AspNetFilters\\LT.SO.Infra.CrossCutting.AspNetFilters.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj",
+        "projectName": "LT.SO.Domain.Core",
+        "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[7.5.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.AspNetFilters\\LT.SO.Infra.CrossCutting.AspNetFilters.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.AspNetFilters\\LT.SO.Infra.CrossCutting.AspNetFilters.csproj",
+        "projectName": "LT.SO.Infra.CrossCutting.AspNetFilters",
+        "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.AspNetFilters\\LT.SO.Infra.CrossCutting.AspNetFilters.csproj",
+        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.AspNetFilters\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj": {
+                "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj"
+              },
+              "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj": {
+                "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Elmah.io": {
+              "target": "Package",
+              "version": "[3.3.43, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.AspnetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AutoRest.Common": {
+              "target": "Package",
+              "version": "[2.4.48, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Rest.ClientRuntime": {
+              "target": "Package",
+              "version": "[2.3.13, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj",
+        "projectName": "LT.SO.Infra.CrossCutting.Log",
+        "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj",
+        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj": {
+                "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

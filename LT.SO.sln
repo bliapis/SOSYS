@@ -1,0 +1,175 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{6250EEF9-BC82-4ED9-9997-D8050AC51EDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{D797B24B-EF73-40FB-83EE-6D9F36171F07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{90F19539-AC40-4A77-A7C5-C696002648B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{5F50125B-15C0-4E00-9D29-F978DBE10630}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{8595F059-18C5-45D7-83F7-3DEE2E7A78C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Domain.Core", "src\LT.SO.Domain.Core\LT.SO.Domain.Core.csproj", "{F5A736D0-D96E-41DC-B486-44774515BFF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.CrossCutting.Bus", "src\LT.SO.Infra.CrossCutting.Bus\LT.SO.Infra.CrossCutting.Bus.csproj", "{EA3D0ED5-31B5-4ABA-BA8B-FCB5BBAB0979}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.CrossCutting.AspNetFilters", "src\LT.SO.Infra.CrossCutting.AspNetFilters\LT.SO.Infra.CrossCutting.AspNetFilters.csproj", "{05B1CBC7-1B36-4304-ACC0-0570A7335205}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.CrossCutting.IoC", "src\LT.SO.Infra.CrossCutting.IoC\LT.SO.Infra.CrossCutting.IoC.csproj", "{2E4158DC-68E0-4AE6-8F60-CA679EEB80B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Services.Api", "src\LT.SO.Services.Api\LT.SO.Services.Api.csproj", "{1247D964-101E-4A8E-9160-AD1634249E4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.CrossCutting.Identity", "src\LT.SO.Infra.CrossCutting.Identity\LT.SO.Infra.CrossCutting.Identity.csproj", "{986BBFE8-EC5D-4FCF-9807-A62A532DB9C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{5E08CF3C-BA7E-473C-B258-62F49E998EDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.Data.Log", "src\LT.SO.Infra.Data.Log\LT.SO.Infra.Data.Log.csproj", "{EAD76EC7-1B6A-495E-8DCF-EBBD5ABC0E77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.CrossCutting.Log", "src\LT.SO.Infra.CrossCutting.Log\LT.SO.Infra.CrossCutting.Log.csproj", "{470AD5B7-3394-4C74-A54B-790E69B04DA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Domain.Gerencial", "src\LT.SO.Domain.Gerencial\LT.SO.Domain.Gerencial.csproj", "{F9D1654C-8707-4C53-B83F-3BEA74275845}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.Data.Gerencial", "src\LT.SO.Infra.Data.Gerencial\LT.SO.Infra.Data.Gerencial.csproj", "{B328D0ED-3466-4CAE-B25C-1C204BFC4B34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{437566D8-03C5-466D-974D-96CC45D993AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Tests.API", "tests\LT.SO.Tests.API\LT.SO.Tests.API.csproj", "{9918AEE8-7F40-41D9-A94C-53316C491417}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Site", "src\LT.SO.Site\LT.SO.Site.csproj", "{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A736D0-D96E-41DC-B486-44774515BFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A736D0-D96E-41DC-B486-44774515BFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A736D0-D96E-41DC-B486-44774515BFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A736D0-D96E-41DC-B486-44774515BFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3D0ED5-31B5-4ABA-BA8B-FCB5BBAB0979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3D0ED5-31B5-4ABA-BA8B-FCB5BBAB0979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3D0ED5-31B5-4ABA-BA8B-FCB5BBAB0979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3D0ED5-31B5-4ABA-BA8B-FCB5BBAB0979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B1CBC7-1B36-4304-ACC0-0570A7335205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B1CBC7-1B36-4304-ACC0-0570A7335205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B1CBC7-1B36-4304-ACC0-0570A7335205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B1CBC7-1B36-4304-ACC0-0570A7335205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4158DC-68E0-4AE6-8F60-CA679EEB80B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4158DC-68E0-4AE6-8F60-CA679EEB80B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4158DC-68E0-4AE6-8F60-CA679EEB80B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4158DC-68E0-4AE6-8F60-CA679EEB80B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1247D964-101E-4A8E-9160-AD1634249E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1247D964-101E-4A8E-9160-AD1634249E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1247D964-101E-4A8E-9160-AD1634249E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1247D964-101E-4A8E-9160-AD1634249E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986BBFE8-EC5D-4FCF-9807-A62A532DB9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986BBFE8-EC5D-4FCF-9807-A62A532DB9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986BBFE8-EC5D-4FCF-9807-A62A532DB9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986BBFE8-EC5D-4FCF-9807-A62A532DB9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD76EC7-1B6A-495E-8DCF-EBBD5ABC0E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD76EC7-1B6A-495E-8DCF-EBBD5ABC0E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD76EC7-1B6A-495E-8DCF-EBBD5ABC0E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD76EC7-1B6A-495E-8DCF-EBBD5ABC0E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470AD5B7-3394-4C74-A54B-790E69B04DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470AD5B7-3394-4C74-A54B-790E69B04DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470AD5B7-3394-4C74-A54B-790E69B04DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470AD5B7-3394-4C74-A54B-790E69B04DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D1654C-8707-4C53-B83F-3BEA74275845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D1654C-8707-4C53-B83F-3BEA74275845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D1654C-8707-4C53-B83F-3BEA74275845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D1654C-8707-4C53-B83F-3BEA74275845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B328D0ED-3466-4CAE-B25C-1C204BFC4B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B328D0ED-3466-4CAE-B25C-1C204BFC4B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B328D0ED-3466-4CAE-B25C-1C204BFC4B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B328D0ED-3466-4CAE-B25C-1C204BFC4B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9918AEE8-7F40-41D9-A94C-53316C491417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9918AEE8-7F40-41D9-A94C-53316C491417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9918AEE8-7F40-41D9-A94C-53316C491417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9918AEE8-7F40-41D9-A94C-53316C491417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F50125B-15C0-4E00-9D29-F978DBE10630} = {90F19539-AC40-4A77-A7C5-C696002648B5}
+		{8595F059-18C5-45D7-83F7-3DEE2E7A78C8} = {90F19539-AC40-4A77-A7C5-C696002648B5}
+		{F5A736D0-D96E-41DC-B486-44774515BFF7} = {D797B24B-EF73-40FB-83EE-6D9F36171F07}
+		{EA3D0ED5-31B5-4ABA-BA8B-FCB5BBAB0979} = {8595F059-18C5-45D7-83F7-3DEE2E7A78C8}
+		{05B1CBC7-1B36-4304-ACC0-0570A7335205} = {8595F059-18C5-45D7-83F7-3DEE2E7A78C8}
+		{2E4158DC-68E0-4AE6-8F60-CA679EEB80B2} = {8595F059-18C5-45D7-83F7-3DEE2E7A78C8}
+		{1247D964-101E-4A8E-9160-AD1634249E4A} = {6250EEF9-BC82-4ED9-9997-D8050AC51EDB}
+		{986BBFE8-EC5D-4FCF-9807-A62A532DB9C6} = {8595F059-18C5-45D7-83F7-3DEE2E7A78C8}
+		{EAD76EC7-1B6A-495E-8DCF-EBBD5ABC0E77} = {5F50125B-15C0-4E00-9D29-F978DBE10630}
+		{470AD5B7-3394-4C74-A54B-790E69B04DA1} = {8595F059-18C5-45D7-83F7-3DEE2E7A78C8}
+		{F9D1654C-8707-4C53-B83F-3BEA74275845} = {D797B24B-EF73-40FB-83EE-6D9F36171F07}
+		{B328D0ED-3466-4CAE-B25C-1C204BFC4B34} = {5F50125B-15C0-4E00-9D29-F978DBE10630}
+		{9918AEE8-7F40-41D9-A94C-53316C491417} = {437566D8-03C5-466D-974D-96CC45D993AE}
+		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F} = {5E08CF3C-BA7E-473C-B258-62F49E998EDC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EDC05DA-65F0-4C4B-A4AB-30EF5BFF3896}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://blima.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\LT.SO.Infra.Data.Gerencial\\LT.SO.Infra.Data.Gerencial.csproj
+		SccProjectTopLevelParentUniqueName1 = LT.SO.sln
+		SccProjectName1 = src/LT.SO.Infra.Data.Gerencial
+		SccLocalPath1 = src\\LT.SO.Infra.Data.Gerencial
+		SccProjectUniqueName2 = src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj
+		SccProjectTopLevelParentUniqueName2 = LT.SO.sln
+		SccProjectName2 = src/LT.SO.Domain.Core
+		SccLocalPath2 = src\\LT.SO.Domain.Core
+		SccProjectUniqueName3 = src\\LT.SO.Domain.Gerencial\\LT.SO.Domain.Gerencial.csproj
+		SccProjectTopLevelParentUniqueName3 = LT.SO.sln
+		SccProjectName3 = src/LT.SO.Domain.Gerencial
+		SccLocalPath3 = src\\LT.SO.Domain.Gerencial
+		SccProjectUniqueName4 = src\\LT.SO.Infra.CrossCutting.AspNetFilters\\LT.SO.Infra.CrossCutting.AspNetFilters.csproj
+		SccProjectTopLevelParentUniqueName4 = LT.SO.sln
+		SccProjectName4 = src/LT.SO.Infra.CrossCutting.AspNetFilters
+		SccLocalPath4 = src\\LT.SO.Infra.CrossCutting.AspNetFilters
+		SccProjectUniqueName5 = src\\LT.SO.Infra.CrossCutting.Bus\\LT.SO.Infra.CrossCutting.Bus.csproj
+		SccProjectTopLevelParentUniqueName5 = LT.SO.sln
+		SccProjectName5 = src/LT.SO.Infra.CrossCutting.Bus
+		SccLocalPath5 = src\\LT.SO.Infra.CrossCutting.Bus
+		SccProjectUniqueName6 = src\\LT.SO.Infra.CrossCutting.Identity\\LT.SO.Infra.CrossCutting.Identity.csproj
+		SccProjectTopLevelParentUniqueName6 = LT.SO.sln
+		SccProjectName6 = src/LT.SO.Infra.CrossCutting.Identity
+		SccLocalPath6 = src\\LT.SO.Infra.CrossCutting.Identity
+		SccProjectUniqueName7 = src\\LT.SO.Infra.CrossCutting.IoC\\LT.SO.Infra.CrossCutting.IoC.csproj
+		SccProjectTopLevelParentUniqueName7 = LT.SO.sln
+		SccProjectName7 = src/LT.SO.Infra.CrossCutting.IoC
+		SccLocalPath7 = src\\LT.SO.Infra.CrossCutting.IoC
+		SccProjectUniqueName8 = src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj
+		SccProjectTopLevelParentUniqueName8 = LT.SO.sln
+		SccProjectName8 = src/LT.SO.Infra.CrossCutting.Log
+		SccLocalPath8 = src\\LT.SO.Infra.CrossCutting.Log
+		SccProjectUniqueName9 = src\\LT.SO.Infra.Data.Log\\LT.SO.Infra.Data.Log.csproj
+		SccProjectTopLevelParentUniqueName9 = LT.SO.sln
+		SccProjectName9 = src/LT.SO.Infra.Data.Log
+		SccLocalPath9 = src\\LT.SO.Infra.Data.Log
+		SccProjectUniqueName10 = src\\LT.SO.Services.Api\\LT.SO.Services.Api.csproj
+		SccProjectTopLevelParentUniqueName10 = LT.SO.sln
+		SccProjectName10 = src/LT.SO.Services.Api
+		SccLocalPath10 = src\\LT.SO.Services.Api
+		SccProjectUniqueName11 = tests\\LT.SO.Tests.API\\LT.SO.Tests.API.csproj
+		SccProjectTopLevelParentUniqueName11 = LT.SO.sln
+		SccProjectName11 = tests/LT.SO.Tests.API
+		SccLocalPath11 = tests\\LT.SO.Tests.API
+		SccProjectUniqueName12 = src\\LT.SO.Site\\LT.SO.Site.csproj
+		SccProjectTopLevelParentUniqueName12 = LT.SO.sln
+		SccProjectName12 = src/LT.SO.Site
+		SccLocalPath12 = src\\LT.SO.Site
+	EndGlobalSection
+EndGlobal

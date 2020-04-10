@@ -1,0 +1,103 @@
+﻿@model LT.SO.Site.Models.Account.LoginModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Log in";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LTSO | Página de Login</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="http://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" id="fontFamilySrc" />
+    <link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/bootstrap/bootstrap-4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/font-awesome/5.1/css/all.css" rel="stylesheet" />
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.min.css" rel="stylesheet" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="../assets/plugins/pace/pace.min.js"></script>
+    <!-- ================== END BASE JS ================== -->
+    <!--[if lt IE 9]>
+        <script src="../assets/crossbrowserjs/excanvas.min.js"></script>
+    <![endif]-->
+</head>
+<body class="pace-top">
+    <!-- begin #page-loader -->
+    <div id="page-loader" class="page-loader fade in"><span class="spinner">Loading...</span></div>
+    <!-- end #page-loader -->
+    <!-- begin #page-container -->
+    <div id="page-container" class="fade page-container">
+        <!-- begin login -->
+        <div class="login">
+            <!-- begin login-brand -->
+            <div class="login-brand bg-inverse text-white">
+                <img src="../assets/img/logo-white.png" height="36" class="pull-right" alt="" /> Autenticação
+            </div>
+            <!-- end login-brand -->
+            <!-- begin login-content -->
+            <div class="login-content">
+                <h4 class="text-center m-t-0 m-b-20">Seja bem-vindo!</h4>
+                @using (Html.BeginForm("Logar", "Account", FormMethod.Post, new { @class = "form-input-flat" }))
+                {
+                    @Html.AntiForgeryToken();
+                    @Html.ValidationSummary(true);
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName, null, new { @class = "form-control input-lg", placeholder = "Usuário", @Value = "bruno15" })
+                        @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control input-lg", placeholder = "Senha", @Value = "Teste@123" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="row m-b-20">
+                        <div class="col-lg-12">
+                            <input type="submit" value="Fazer login" class="btn btn-lime btn-lg btn-block">
+                        </div>
+                    </div>
+                    <div class="row m-b-20">
+                        <div class="col-lg-12">
+                            <span>@Html.ActionLink("Esqueci a senha", "ForgotPassword", "Account")</span>
+                        </div>
+                    </div>
+                }
+            </div>
+            <!-- end login-content -->
+        </div>
+        <!-- end login -->
+    </div>
+    <!-- end page container -->
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="../assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../assets/plugins/bootstrap/bootstrap-4.1.1/js/bootstrap.bundle.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="../assets/crossbrowserjs/html5shiv.js"></script>
+        <script src="../assets/crossbrowserjs/respond.min.js"></script>
+    <![endif]-->
+    <script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+    <!-- ================== END BASE JS ================== -->
+    <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+    <script src="../assets/js/demo.min.js"></script>
+    <script src="../assets/js/apps.min.js"></script>
+    <!-- ================== END PAGE LEVEL JS ================== -->
+
+    <script>
+        $(document).ready(function () {
+            App.init();
+            Demo.initThemePanel();
+        });
+    </script>
+</body>
+</html>

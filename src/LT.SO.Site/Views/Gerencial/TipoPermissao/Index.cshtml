@@ -1,0 +1,62 @@
+﻿@model LT.SO.Site.Models.Gerencial.TipoPermissao.TipoPermissaoFilter
+
+@{
+    ViewData["Title"] = "Tipo Permissão";
+}
+
+<div id="content" class="panel">
+
+    <h1 class="panel panel-heading">Tipo Permissão</h1>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="float: right;">
+                    <span id="spanSHFiltros" class="btn btn-white btn-xs" onclick="TipoPermissaoFilter.Methods.MostrarEsconderFiltros();">Esconder filtros</span><i id="iconHSFiltros" class="fa fa-sort-down" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div id="filtros" class="card col-md-12">
+                <div class="card-body">
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+
+                    <div class="form-group col-xl-3 col-lg-6 col-md-8 col-sm-12">
+                        @Html.LabelFor(m => m.Nome)
+                   
+                        @Html.TextBoxFor(m => m.Nome, null, new { @class = "form-control input", placeholder = "Nome" })
+                        @Html.ValidationMessageFor(m => m.Nome, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-lg-12">
+                        <button id='btnPesquisarTipoPermissao' onclick="TipoPermissaoFilter.Methods.PesquisarTipoPermissao();" class='btn btn-success'><i class='fa fa-search'> Pesquisar</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="col-md-12">
+            <div style="float: right;">
+                <span id="btnNovo" class="btn btn-success m-b-5" onclick="TipoPermissaoFilter.Methods.CriarNovo();"><i class="fa fa-plus-square" aria-hidden="true"> Criar Novo</i></span>
+            </div>
+        </div>
+
+        <div class="row col-md-12">
+            <table id="SearchResultTable" class="display responsive" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_MostrarErros")
+
+<script src="~/Scripts/Gerencial/TipoPermissao/TipoPermissaoFilter.js"></script>

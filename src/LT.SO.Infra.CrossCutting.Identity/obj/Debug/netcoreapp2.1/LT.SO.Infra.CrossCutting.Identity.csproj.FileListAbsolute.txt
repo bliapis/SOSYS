@@ -1,0 +1,16 @@
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\appsettings.Testing.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.deps.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.runtimeconfig.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.runtimeconfig.dev.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.csprojAssemblyReference.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.AssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.csproj.CopyComplete
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Identity\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.pdb

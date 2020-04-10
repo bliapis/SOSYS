@@ -1,0 +1,12 @@
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.deps.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.csprojAssemblyReference.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.AssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.csproj.CopyComplete
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Bus\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.pdb

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LT.SO.Domain.Gerencial\LT.SO.Domain.Gerencial.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.CrossCutting.AspNetFilters\LT.SO.Infra.CrossCutting.AspNetFilters.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Bus\LT.SO.Infra.CrossCutting.Bus.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Identity\LT.SO.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.Data.Log\LT.SO.Infra.Data.Log.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.Data.Gerencial\LT.SO.Infra.Data.Gerencial.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

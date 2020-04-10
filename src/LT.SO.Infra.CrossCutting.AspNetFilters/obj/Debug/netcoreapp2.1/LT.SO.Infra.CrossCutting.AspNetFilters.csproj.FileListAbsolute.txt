@@ -1,0 +1,14 @@
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.deps.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Log.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Log.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.csprojAssemblyReference.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.AssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.csproj.CopyComplete
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.AspNetFilters\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.AspNetFilters.pdb

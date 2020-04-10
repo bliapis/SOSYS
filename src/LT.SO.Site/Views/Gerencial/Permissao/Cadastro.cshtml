@@ -1,0 +1,62 @@
+﻿@model LT.SO.Site.Models.Gerencial.Permissao.PermissaoViewModel
+
+@{
+    ViewData["Title"] = "Cadastro de Permissão";
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col">
+        <section class="card">
+            <header class="card-header">
+                <h2 class="card-title">Cadastro de Permissão</h2>
+            </header>
+            <div class="card-body">
+
+                @using (Html.BeginForm("Save", "Permissao", FormMethod.Post, new { @class = "form-horizontal form-bordered", @id = "formCadastroPermissao" }))
+                {
+                    @Html.AntiForgeryToken();
+                    @Html.ValidationSummary(true);
+
+                    @Html.HiddenFor(m => m.Id);
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-sm-8 col-md-6 col-lg-4 ml-1">
+                            @Html.LabelFor(m => m.Valor)
+                            @Html.TextBoxFor(m => m.Valor, null, new { @class = "form-control", placeholder = "Permissão" })
+                            @Html.ValidationMessageFor(m => m.Valor, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-xs-12 col-sm-8 col-md-6 col-lg-4 ml-1">
+                            @Html.LabelFor(m => m.TipoId)
+                            <select id="TipoId" name="TipoId" class="form-control input" asp-for="TipoId" asp-items="@ViewBag.SLTipoPermissao"></select>
+                            @Html.ValidationMessageFor(m => m.TipoId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4" style="inline-block; float: left;">
+                            <button type="button" class="btn btn-default" onclick="Permissao.Methods.Voltar();">
+                                <span class="fa fa-step-backward"></span>
+                                Voltar
+                            </button>
+
+                            <span> | </span>
+
+                            <button type="button" class="btn btn-success" onclick="Permissao.Methods.Salvar();">
+                                <span class="fa fa-save"></span>
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </section>
+    </div>
+</div>
+
+@Html.Partial("_MostrarErros")
+
+<script src="~/Scripts/Gerencial/Permissao/Permissao.js"></script>

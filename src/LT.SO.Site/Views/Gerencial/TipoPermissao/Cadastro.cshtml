@@ -1,0 +1,55 @@
+﻿@model LT.SO.Site.Models.Gerencial.TipoPermissao.TipoPermissao
+
+@{
+    ViewData["Title"] = "Cadastro Tipo de Permissão";
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col">
+        <section class="card">
+            <header class="card-header">
+                <h2 class="card-title">Cadastro Tipo de Permissão</h2>
+            </header>
+            <div class="card-body">
+
+                @using (Html.BeginForm("Save", "TipoPermissao", FormMethod.Post, new { @class = "form-horizontal form-bordered", @id = "formCadastroTipoPermissao" }))
+                {
+                    @Html.AntiForgeryToken();
+                    @Html.ValidationSummary(true);
+
+                    @Html.HiddenFor(m => m.Id);
+
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                            @Html.LabelFor(m => m.Nome)
+                            @Html.TextBoxFor(m => m.Nome, null, new { @class = "form-control", placeholder = "Nome do Tipo de Permissão" })
+                            @Html.ValidationMessageFor(m => m.Nome, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4" style="inline-block; float: left;">
+                            <button type="button" class="btn btn-default" onclick="TipoPermissaoFilter.Methods.Voltar();">
+                                <span class="fa fa-step-backward"></span>
+                                Voltar
+                            </button>
+
+                            <span> | </span>
+
+                            <button type="button" class="btn btn-success" onclick="TipoPermissaoFilter.Methods.Salvar();">
+                                <span class="fa fa-save"></span>
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </section>
+    </div>
+</div>
+
+@Html.Partial("_MostrarErros")
+
+<script src="~/Scripts/Gerencial/TipoPermissao/TipoPermissaoFilter.js"></script>

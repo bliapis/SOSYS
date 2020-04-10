@@ -1,0 +1,12 @@
+﻿<script>
+        $(document).ready(function () {
+
+            @if (ViewBag.Result != null && ViewBag.Result.Messages != null)
+            {
+                foreach(var msg in ViewBag.Result?.Messages)
+                {
+                    @Html.Raw("Helpers.MessageValidation('"+ ViewBag.Result.MsgType + "', '"+ msg + "', '" + ViewBag.Result.CallBackUrl + "');");
+                }
+            }
+        });
+</script>
