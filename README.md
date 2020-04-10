@@ -21,18 +21,31 @@ swagger, entre outros.
 
 ### Roadmap 2
 - Criar uma nova unidade de negócio na aplicação para criar contas bancárias e realizar transferências.
+
   -- Conta Corrente (Numero, Usuario e Saldo)
+  
     --- Funcionalidades: Cadastrar / Editar / Desativar / Consultar contas por usuário
+    
   -- Transferencia (Id, ContaOrigem, ContaDestino, Valor)
+  
     --- Consultar transferencias por ContaOrigem e intervalo de data
+    
     --- Criar transferencia entre contas
+    
       ---- Solicitar conta origem, conta destino e valor
+      
       ---- Checar se as contas existem
+      
       ---- Checar se existe saldo para a transferencia
+      
 - Criar um front em ReactJS para consumir essa nova unidade de negócio.
+
   -- Realizar autenticação
+  
   -- Apresentar ao usuários as contas do mesmo
+  
     --- Histórico de transações da conta (filtro por data)
+    
     --- Fazer Transferência
     
 ### Roadmap 3
