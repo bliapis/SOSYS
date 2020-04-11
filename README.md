@@ -13,7 +13,7 @@ Nesse projeto foram aplicados diversos conceitos e ferramentas como: MVC, DDD, T
 swagger, entre outros.
 
 ### Roadmap 1
-- Alterar o Banco de LOGS para MongoDB
+Ok - Alterar o Banco de LOGS para MongoDB
 - Aplicar CQRS no projeto a partir do Domain "Gerencial", nas funcionalidades básicas do usuário.
   -- Salvar os comandos em um banco MongoDb separado
 - Implementar RabbitMQ - Alterar o ServiceBus atual in memory, e utilizar o client do RabbitMQ (RawRabbit).
