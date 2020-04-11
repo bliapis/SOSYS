@@ -29,13 +29,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Log\LT.SO.Infra.CrossCutting.Log.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.Data.Common\LT.SO.Infra.Data.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.4.4" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appsettings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="appsettings.Testing.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

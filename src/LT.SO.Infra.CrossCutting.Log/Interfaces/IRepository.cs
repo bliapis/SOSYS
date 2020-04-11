@@ -1,11 +1,9 @@
-﻿using LT.SO.Domain.Core.Models;
-using System;
+﻿using System.Threading.Tasks;
 
 namespace LT.SO.Infra.CrossCutting.Log.Interfaces
 {
-    public interface IRepository<TEntity> : IDisposable where TEntity : Entity<TEntity>
+    public interface IRepository<T> where T : class
     {
-        void Add(TEntity obj);
-        int SaveChanges();
+        Task AddAsync(T obj);
     }
 }

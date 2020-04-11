@@ -1,3 +1,7 @@
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.csprojAssemblyReference.cache
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.AssemblyInfo.cs
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
@@ -15,6 +19,7 @@ D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Cros
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.IoC.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Log.dll
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Common.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Gerencial.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Log.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Services.Api.dll
@@ -26,12 +31,9 @@ D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Cros
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.pdb
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.IoC.pdb
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Log.pdb
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Common.pdb
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Gerencial.pdb
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Log.pdb
-D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.csprojAssemblyReference.cache
-D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.csproj.CoreCompileInputs.cache
-D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.AssemblyInfoInputs.cache
-D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.AssemblyInfo.cs
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.csproj.CopyComplete
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.pdb

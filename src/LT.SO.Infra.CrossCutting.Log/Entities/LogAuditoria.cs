@@ -4,7 +4,7 @@ using LT.SO.Infra.CrossCutting.Log.Enum;
 
 namespace LT.SO.Infra.CrossCutting.Log.Entities
 {
-    public class LogAuditoria : Entity<LogAuditoria>
+    public class LogAuditoria //: Entity<LogAuditoria>
     {
         public LogAuditoria() {}
 
@@ -20,6 +20,7 @@ namespace LT.SO.Infra.CrossCutting.Log.Entities
             Data = DateTime.Now;
         }
 
+        public Guid Id { get; private set; }
         public string Identifier { get; private set; }
         public string Message { get; private set; }
         public string Detail { get; private set; }
@@ -35,10 +36,10 @@ namespace LT.SO.Infra.CrossCutting.Log.Entities
         public string Cookies { get; private set; }
         public string ServerVariables { get; private set; }
 
-        public override bool IsValid()
-        {
-            throw new NotImplementedException();
-        }
+        //public override bool IsValid()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public static class LogAuditoriaFactory
         {

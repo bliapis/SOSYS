@@ -21,6 +21,7 @@
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.AspNetFilters\LT.SO.Infra.CrossCutting.AspNetFilters.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Bus\LT.SO.Infra.CrossCutting.Bus.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Identity\LT.SO.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.Data.Common\LT.SO.Infra.Data.Common.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.Data.Log\LT.SO.Infra.Data.Log.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.Data.Gerencial\LT.SO.Infra.Data.Gerencial.csproj" />
   </ItemGroup>

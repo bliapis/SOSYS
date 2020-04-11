@@ -1,3 +1,9 @@
+D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.csprojAssemblyReference.cache
+D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.RazorAssemblyInfo.cache
+D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.RazorAssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.AssemblyInfo.cs
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\appsettings.json
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\appsettings.Testing.json
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Services.Api.deps.json
@@ -12,6 +18,7 @@ D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Cro
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Identity.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.IoC.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Log.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Common.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Gerencial.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Log.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Domain.Gerencial.pdb
@@ -21,14 +28,9 @@ D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Cro
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.pdb
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.pdb
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Log.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Common.pdb
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Gerencial.pdb
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Log.pdb
-D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.csprojAssemblyReference.cache
-D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.csproj.CoreCompileInputs.cache
-D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.RazorAssemblyInfo.cache
-D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.RazorAssemblyInfo.cs
-D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.AssemblyInfoInputs.cache
-D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.AssemblyInfo.cs
 D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.RazorTargetAssemblyInfo.cache
 D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.csproj.CopyComplete
 D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.dll

@@ -4,13 +4,14 @@ using System.Collections.Generic;
 
 namespace LT.SO.Infra.CrossCutting.Log.Entities
 {
-    public class LogModel : Entity<LogModel>
+    public class LogModel
     {
         public LogModel()
         {
             Id = Guid.NewGuid();
         }
 
+        public Guid Id { get; set; }
         public string Version { get; set; }
         public string Method { get; set; }
         public string Url { get; set; }
@@ -29,10 +30,5 @@ namespace LT.SO.Infra.CrossCutting.Log.Entities
         public string LogCookies { get; set; }
         public string LogServerVariables { get; set; }
         public string LogDatas { get; set; }
-
-        public override bool IsValid()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

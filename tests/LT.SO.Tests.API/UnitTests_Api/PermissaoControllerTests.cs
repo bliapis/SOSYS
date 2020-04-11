@@ -12,8 +12,7 @@ using LT.SO.Domain.Core.Interfaces;
 using LT.SO.Domain.Core.Notifications;
 using LT.SO.Domain.Permissoes.Permissao.Entities;
 using LT.SO.Domain.Permissoes.Permissao.Interfaces.Services;
-using LT.SO.Domain.Permissoes.Permissao.Interfaces.Repositories;
-using LT.SO.Infra.CrossCutting.Log.Interfaces;
+using LT.SO.Infra.CrossCutting.Log.Services;
 
 namespace LT.SO.Tests.API.UnitTests
 {

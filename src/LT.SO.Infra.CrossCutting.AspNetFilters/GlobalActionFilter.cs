@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Http.Extensions;
 using Newtonsoft.Json;
 using LT.SO.Infra.CrossCutting.Log.Entities;
-using LT.SO.Infra.CrossCutting.Log.Interfaces;
+using LT.SO.Infra.CrossCutting.Log.Services;
 
 namespace LT.SO.Infra.CrossCutting.AspNetFilters
 {
@@ -22,7 +22,7 @@ namespace LT.SO.Infra.CrossCutting.AspNetFilters
             _logService = logService;
         }
 
-        public void OnActionExecuting(ActionExecutingContext context)
+        public async void OnActionExecuting(ActionExecutingContext context)
         {
             //Para produção descomentar esse if, senão vamos ficar logando dev sem necessidade.
             //if (_hostingEnviroment.IsProduction())
@@ -55,11 +55,11 @@ namespace LT.SO.Infra.CrossCutting.AspNetFilters
                     })
                 );
 
-                _logService.SaveAudit(logAudit);
+                await _logService.SaveAuditAsync(logAudit);
             //}
         }
 
-        public void OnActionExecuted(ActionExecutedContext context)
+        public async void OnActionExecuted(ActionExecutedContext context)
         {
             //Para produção descomentar esse if, senão vamos ficar logando dev sem necessidade.
             //if (_hostingEnviroment.IsProduction())
@@ -92,7 +92,7 @@ namespace LT.SO.Infra.CrossCutting.AspNetFilters
                     })
                 );
 
-                _logService.SaveAudit(logAudit);
+                await _logService.SaveAuditAsync(logAudit);
             //}
         }
     }

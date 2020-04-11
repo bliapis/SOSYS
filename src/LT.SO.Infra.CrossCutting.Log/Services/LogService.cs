@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using LT.SO.Infra.CrossCutting.Log.Entities;
@@ -20,13 +21,12 @@ namespace LT.SO.Infra.CrossCutting.Log.Services
             _logAudit = logAudit;
         }
 
-        public void Save(LogModel model)
+        public async Task SaveAsync(LogModel model)
         {
-            _logRepo.Add(model);
-            _logRepo.SaveChanges();
+            await _logRepo.AddAsync(model);
         }
 
-        public Guid Save(Exception ex)
+        public async Task<Guid> SaveAsync(Exception ex)
         {
             var model = new LogModel
             {
@@ -41,25 +41,22 @@ namespace LT.SO.Infra.CrossCutting.Log.Services
                 Detail = JsonConvert.SerializeObject(new { ExceptionMessage = ex.Message, InnerExceptionMessage = ex.InnerException?.Message, DadosException = ex })
             };
 
-            _logRepo.Add(model);
-            _logRepo.SaveChanges();
+            await _logRepo.AddAsync(model);
 
             return model.Id;
         }
 
-        public Guid SaveAudit(string identifier, string message, string detail, LogSourceEnum source, LogTypeEnum type)
+        public async Task<Guid> SaveAuditAsync(string identifier, string message, string detail, LogSourceEnum source, LogTypeEnum type)
         {
             var model = new LogAuditoria(identifier, message, detail, source, type);
-            _logAudit.Add(model);
-            _logAudit.SaveChanges();
+            await _logAudit.AddAsync(model);
 
             return model.Id;
         }
 
-        public Guid SaveAudit(LogAuditoria log)
+        public async Task<Guid> SaveAuditAsync(LogAuditoria log)
         {
-            _logAudit.Add(log);
-            _logAudit.SaveChanges();
+            await _logAudit.AddAsync(log);
 
             return log.Id;
         }
@@ -85,7 +82,7 @@ namespace LT.SO.Infra.CrossCutting.Log.Services
 
         public void Dispose()
         {
-            _logRepo.Dispose();
+            //_logRepo.Dispose();
             GC.SuppressFinalize(this);
         }
     }

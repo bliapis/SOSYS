@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Newtonsoft.Json;
 using LT.SO.Infra.CrossCutting.Log.Entities;
-using LT.SO.Infra.CrossCutting.Log.Interfaces;
+using LT.SO.Infra.CrossCutting.Log.Services;
 
 namespace LT.SO.Infra.CrossCutting.AspNetFilters
 {
@@ -118,7 +118,7 @@ namespace LT.SO.Infra.CrossCutting.AspNetFilters
             };
 
             //Salvar no Banco
-            _logService.Save(message);
+            _logService.SaveAsync(message);
 
             //Adiciono o ID do Log na Exception
             context.Exception.Data.Add("LogId", message.Id);

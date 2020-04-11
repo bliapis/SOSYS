@@ -5,7 +5,6 @@ D:\Projects\SOSYS\src\LT.SO.Site\bin\Debug\netcoreapp2.1\LT.SO.Site.dll
 D:\Projects\SOSYS\src\LT.SO.Site\bin\Debug\netcoreapp2.1\LT.SO.Site.pdb
 D:\Projects\SOSYS\src\LT.SO.Site\bin\Debug\netcoreapp2.1\LT.SO.Site.Views.dll
 D:\Projects\SOSYS\src\LT.SO.Site\bin\Debug\netcoreapp2.1\LT.SO.Site.Views.pdb
-D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.csprojAssemblyReference.cache
 D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.csproj.CoreCompileInputs.cache
 D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.RazorAssemblyInfo.cache
 D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.RazorAssemblyInfo.cs
@@ -44,3 +43,4 @@ D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.Views.pdb
 D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.dll
 D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.pdb
 D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.csproj.CopyComplete
+D:\Projects\SOSYS\src\LT.SO.Site\obj\Debug\netcoreapp2.1\LT.SO.Site.csprojAssemblyReference.cache

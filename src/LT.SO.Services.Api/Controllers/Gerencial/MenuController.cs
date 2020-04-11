@@ -14,7 +14,7 @@ using LT.SO.Domain.Core.Notifications;
 using LT.SO.Domain.Permissoes.Menu.Entities;
 using LT.SO.Domain.Permissoes.Menu.Interfaces.Service;
 using LT.SO.Domain.Permissoes.GrupoAcesso.Interfaces.Service;
-using LT.SO.Infra.CrossCutting.Log.Interfaces;
+using LT.SO.Infra.CrossCutting.Log.Services;
 
 namespace LT.SO.Services.Api.Controllers.Gerencial
 {

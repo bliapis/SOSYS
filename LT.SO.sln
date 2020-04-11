@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{6250EEF9-BC82-4ED9-9997-D8050AC51EDB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - API", "2 - API", "{6250EEF9-BC82-4ED9-9997-D8050AC51EDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{D797B24B-EF73-40FB-83EE-6D9F36171F07}"
 EndProject
@@ -35,11 +35,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Domain.Gerencial", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.Data.Gerencial", "src\LT.SO.Infra.Data.Gerencial\LT.SO.Infra.Data.Gerencial.csproj", "{B328D0ED-3466-4CAE-B25C-1C204BFC4B34}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{437566D8-03C5-466D-974D-96CC45D993AE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{437566D8-03C5-466D-974D-96CC45D993AE}"
+	ProjectSection(SolutionItems) = preProject
+		src\LT.SO.Infra.CrossCutting.IoC\LT.SO.Infra.CrossCutting.IoC.csproj.vspscc = src\LT.SO.Infra.CrossCutting.IoC\LT.SO.Infra.CrossCutting.IoC.csproj.vspscc
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Tests.API", "tests\LT.SO.Tests.API\LT.SO.Tests.API.csproj", "{9918AEE8-7F40-41D9-A94C-53316C491417}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Site", "src\LT.SO.Site\LT.SO.Site.csproj", "{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LT.SO.Infra.Data.Common", "src\LT.SO.Infra.Data.Common\LT.SO.Infra.Data.Common.csproj", "{FA8E91B3-B2D5-4EEA-8CBB-EA2D250821C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Services", "5 - Services", "{169AF1D3-380A-4649-B30A-B37E3EBD3315}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gerencial", "Gerencial", "{3F9EDF1C-0F02-4414-9227-8D4636B55CF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logs", "Logs", "{CE757008-FFF2-4728-A9F8-5F5B378AD5DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +106,10 @@ Global
 		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8E91B3-B2D5-4EEA-8CBB-EA2D250821C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8E91B3-B2D5-4EEA-8CBB-EA2D250821C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8E91B3-B2D5-4EEA-8CBB-EA2D250821C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8E91B3-B2D5-4EEA-8CBB-EA2D250821C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,62 +129,11 @@ Global
 		{B328D0ED-3466-4CAE-B25C-1C204BFC4B34} = {5F50125B-15C0-4E00-9D29-F978DBE10630}
 		{9918AEE8-7F40-41D9-A94C-53316C491417} = {437566D8-03C5-466D-974D-96CC45D993AE}
 		{D9DC4AEE-38FB-4873-8F6D-3F8AEBCFE64F} = {5E08CF3C-BA7E-473C-B258-62F49E998EDC}
+		{FA8E91B3-B2D5-4EEA-8CBB-EA2D250821C8} = {5F50125B-15C0-4E00-9D29-F978DBE10630}
+		{3F9EDF1C-0F02-4414-9227-8D4636B55CF2} = {169AF1D3-380A-4649-B30A-B37E3EBD3315}
+		{CE757008-FFF2-4728-A9F8-5F5B378AD5DA} = {169AF1D3-380A-4649-B30A-B37E3EBD3315}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EDC05DA-65F0-4C4B-A4AB-30EF5BFF3896}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 13
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://blima.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = src\\LT.SO.Infra.Data.Gerencial\\LT.SO.Infra.Data.Gerencial.csproj
-		SccProjectTopLevelParentUniqueName1 = LT.SO.sln
-		SccProjectName1 = src/LT.SO.Infra.Data.Gerencial
-		SccLocalPath1 = src\\LT.SO.Infra.Data.Gerencial
-		SccProjectUniqueName2 = src\\LT.SO.Domain.Core\\LT.SO.Domain.Core.csproj
-		SccProjectTopLevelParentUniqueName2 = LT.SO.sln
-		SccProjectName2 = src/LT.SO.Domain.Core
-		SccLocalPath2 = src\\LT.SO.Domain.Core
-		SccProjectUniqueName3 = src\\LT.SO.Domain.Gerencial\\LT.SO.Domain.Gerencial.csproj
-		SccProjectTopLevelParentUniqueName3 = LT.SO.sln
-		SccProjectName3 = src/LT.SO.Domain.Gerencial
-		SccLocalPath3 = src\\LT.SO.Domain.Gerencial
-		SccProjectUniqueName4 = src\\LT.SO.Infra.CrossCutting.AspNetFilters\\LT.SO.Infra.CrossCutting.AspNetFilters.csproj
-		SccProjectTopLevelParentUniqueName4 = LT.SO.sln
-		SccProjectName4 = src/LT.SO.Infra.CrossCutting.AspNetFilters
-		SccLocalPath4 = src\\LT.SO.Infra.CrossCutting.AspNetFilters
-		SccProjectUniqueName5 = src\\LT.SO.Infra.CrossCutting.Bus\\LT.SO.Infra.CrossCutting.Bus.csproj
-		SccProjectTopLevelParentUniqueName5 = LT.SO.sln
-		SccProjectName5 = src/LT.SO.Infra.CrossCutting.Bus
-		SccLocalPath5 = src\\LT.SO.Infra.CrossCutting.Bus
-		SccProjectUniqueName6 = src\\LT.SO.Infra.CrossCutting.Identity\\LT.SO.Infra.CrossCutting.Identity.csproj
-		SccProjectTopLevelParentUniqueName6 = LT.SO.sln
-		SccProjectName6 = src/LT.SO.Infra.CrossCutting.Identity
-		SccLocalPath6 = src\\LT.SO.Infra.CrossCutting.Identity
-		SccProjectUniqueName7 = src\\LT.SO.Infra.CrossCutting.IoC\\LT.SO.Infra.CrossCutting.IoC.csproj
-		SccProjectTopLevelParentUniqueName7 = LT.SO.sln
-		SccProjectName7 = src/LT.SO.Infra.CrossCutting.IoC
-		SccLocalPath7 = src\\LT.SO.Infra.CrossCutting.IoC
-		SccProjectUniqueName8 = src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj
-		SccProjectTopLevelParentUniqueName8 = LT.SO.sln
-		SccProjectName8 = src/LT.SO.Infra.CrossCutting.Log
-		SccLocalPath8 = src\\LT.SO.Infra.CrossCutting.Log
-		SccProjectUniqueName9 = src\\LT.SO.Infra.Data.Log\\LT.SO.Infra.Data.Log.csproj
-		SccProjectTopLevelParentUniqueName9 = LT.SO.sln
-		SccProjectName9 = src/LT.SO.Infra.Data.Log
-		SccLocalPath9 = src\\LT.SO.Infra.Data.Log
-		SccProjectUniqueName10 = src\\LT.SO.Services.Api\\LT.SO.Services.Api.csproj
-		SccProjectTopLevelParentUniqueName10 = LT.SO.sln
-		SccProjectName10 = src/LT.SO.Services.Api
-		SccLocalPath10 = src\\LT.SO.Services.Api
-		SccProjectUniqueName11 = tests\\LT.SO.Tests.API\\LT.SO.Tests.API.csproj
-		SccProjectTopLevelParentUniqueName11 = LT.SO.sln
-		SccProjectName11 = tests/LT.SO.Tests.API
-		SccLocalPath11 = tests\\LT.SO.Tests.API
-		SccProjectUniqueName12 = src\\LT.SO.Site\\LT.SO.Site.csproj
-		SccProjectTopLevelParentUniqueName12 = LT.SO.sln
-		SccProjectName12 = src/LT.SO.Site
-		SccLocalPath12 = src\\LT.SO.Site
 	EndGlobalSection
 EndGlobal

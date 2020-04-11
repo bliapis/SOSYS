@@ -123,7 +123,7 @@ namespace LT.SO.Tests.API
             services.AddAutoMapper();
 
             //Registrar todos os DI
-            RegisterServices(services);
+            RegisterServices(services, Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -151,9 +151,9 @@ namespace LT.SO.Tests.API
             InMemoryBus.ContainerAccessor = () => accessor.HttpContext.RequestServices;
         }
 
-        private static void RegisterServices(IServiceCollection services)
+        private static void RegisterServices(IServiceCollection services, IConfiguration config)
         {
-            NativeInjectorBootStrapper.RegisterServices(services);
+            NativeInjectorBootStrapper.RegisterServices(services, config);
         }
     }
 }

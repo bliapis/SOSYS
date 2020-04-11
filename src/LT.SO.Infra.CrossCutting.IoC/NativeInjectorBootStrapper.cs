@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AutoMapper;
 using LT.SO.Domain.Core.Bus;
@@ -11,8 +12,11 @@ using LT.SO.Infra.CrossCutting.Identity.Models;
 using LT.SO.Infra.CrossCutting.Identity.Services;
 using LT.SO.Infra.CrossCutting.Log.Services;
 using LT.SO.Infra.CrossCutting.Log.Interfaces;
-using LT.SO.Infra.Data.Log.Context;
+using LT.SO.Infra.Data.Gerencial.Context;
+using LT.SO.Infra.Data.Gerencial.UoW;
 using LT.SO.Infra.Data.Log.Repository;
+using LT.SO.Infra.Data.Gerencial.Repository;
+using LT.SO.Infra.Data.Common.Mongo;
 using LT.SO.Domain.Permissoes.Permissao.Service;
 using LT.SO.Domain.Permissoes.Permissao.Interfaces.Services;
 using LT.SO.Domain.Permissoes.GrupoAcesso.Services;
@@ -20,20 +24,18 @@ using LT.SO.Domain.Permissoes.GrupoAcesso.Interfaces.Service;
 using LT.SO.Domain.Permissoes.Menu.Services;
 using LT.SO.Domain.Permissoes.Menu.Interfaces.Service;
 using LT.SO.Domain.Permissoes.Permissao.Interfaces.Repositories;
-using LT.SO.Infra.Data.Gerencial.Repository;
 using LT.SO.Domain.Permissoes.GrupoAcesso.Interfaces.Repository;
 using LT.SO.Domain.Permissoes.Menu.Interfaces.Repository;
-using LT.SO.Infra.Data.Gerencial.Context;
-using LT.SO.Infra.Data.Gerencial.UoW;
 using LT.SO.Domain.Gerencial.Usuario.Services;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Service;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Repository;
+using LT.SO.Infra.Data.Log.Seed;
 
 namespace LT.SO.Infra.CrossCutting.IoC
 {
     public class NativeInjectorBootStrapper
     {
-        public static void RegisterServices(IServiceCollection services)
+        public static void RegisterServices(IServiceCollection services, IConfiguration configuration)
         {
             //ASPNET
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -62,7 +64,8 @@ namespace LT.SO.Infra.CrossCutting.IoC
             #region Infra
 
             //LogData
-            services.AddScoped<LogContext>();
+            services.AddMongoDB(configuration);
+            services.AddScoped<IDatabaseSeeder, CustomMongoSeeder>();
             services.AddScoped<ILogRepository, LogRepository>();
             services.AddScoped<ILogAuditoriaRepository, LogAuditoriaRepository>();
 
@@ -75,6 +78,7 @@ namespace LT.SO.Infra.CrossCutting.IoC
             services.AddScoped<IMenuRepository, MenuRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             #endregion
 
             #region CrossCutting

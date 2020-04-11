@@ -25,7 +25,6 @@ using LT.SO.Infra.CrossCutting.IoC;
 using LT.SO.Infra.CrossCutting.AspNetFilters;
 using LT.SO.Infra.CrossCutting.Identity.Data;
 using LT.SO.Infra.CrossCutting.Identity.Authorization;
-using Microsoft.Data.Sqlite;
 
 namespace LT.SO.Services.Api
 {
@@ -161,7 +160,7 @@ namespace LT.SO.Services.Api
             );
 
             //Registrar todos os DI
-            RegisterServices(services);
+            RegisterServices(services, Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -214,9 +213,9 @@ namespace LT.SO.Services.Api
             InMemoryBus.ContainerAccessor = () => accessor.HttpContext.RequestServices;
         }
 
-        private static void RegisterServices(IServiceCollection services)
+        private static void RegisterServices(IServiceCollection services, IConfiguration configuration)
         {
-            NativeInjectorBootStrapper.RegisterServices(services);
+            NativeInjectorBootStrapper.RegisterServices(services, configuration);
         }
     }
 }

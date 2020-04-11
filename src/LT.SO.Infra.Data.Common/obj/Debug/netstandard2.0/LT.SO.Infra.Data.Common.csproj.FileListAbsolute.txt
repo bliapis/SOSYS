@@ -1,0 +1,9 @@
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\bin\Debug\netstandard2.0\LT.SO.Infra.Data.Common.deps.json
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\bin\Debug\netstandard2.0\LT.SO.Infra.Data.Common.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\bin\Debug\netstandard2.0\LT.SO.Infra.Data.Common.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\obj\Debug\netstandard2.0\LT.SO.Infra.Data.Common.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\obj\Debug\netstandard2.0\LT.SO.Infra.Data.Common.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\obj\Debug\netstandard2.0\LT.SO.Infra.Data.Common.AssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\obj\Debug\netstandard2.0\LT.SO.Infra.Data.Common.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\obj\Debug\netstandard2.0\LT.SO.Infra.Data.Common.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.Data.Common\obj\Debug\netstandard2.0\LT.SO.Infra.Data.Common.csprojAssemblyReference.cache

@@ -23,10 +23,10 @@ using LT.SO.Domain.Gerencial.Usuario.Interfaces.Service;
 using LT.SO.Infra.CrossCutting.Identity.Data;
 using LT.SO.Infra.CrossCutting.Identity.Models;
 using LT.SO.Infra.CrossCutting.Identity.Authorization;
-using LT.SO.Infra.CrossCutting.Log.Interfaces;
 using LT.SO.Domain.Permissoes.Permissao.Entities;
 using LT.SO.Domain.Permissoes.Permissao.Interfaces.Services;
 using LT.SO.Domain.Permissoes.GrupoAcesso.Interfaces.Service;
+using LT.SO.Infra.CrossCutting.Log.Services;
 
 namespace LT.SO.Services.Api.Controllers
 {
@@ -112,7 +112,7 @@ namespace LT.SO.Services.Api.Controllers
                     return Response(model);
                 }
                 
-                _logService.SaveAudit(HttpContext.TraceIdentifier, string.Format("Usuário {0} criado com sucesso", model.Nome), JsonConvert.SerializeObject(model), Infra.CrossCutting.Log.Enum.LogSourceEnum.Api, Infra.CrossCutting.Log.Enum.LogTypeEnum.Navegacao);
+                await _logService.SaveAuditAsync(HttpContext.TraceIdentifier, string.Format("Usuário {0} criado com sucesso", model.Nome), JsonConvert.SerializeObject(model), Infra.CrossCutting.Log.Enum.LogSourceEnum.Api, Infra.CrossCutting.Log.Enum.LogTypeEnum.Navegacao);
                 var response = await GenerateUserToken(new LoginModel { UserName = model.Usuario, Password = model.Senha });
 
                 return Response(response);
@@ -226,7 +226,7 @@ namespace LT.SO.Services.Api.Controllers
                         return Response(model);
                     }
 
-                    _logService.SaveAudit(HttpContext.TraceIdentifier, string.Format("Usuário {0} alterado com sucesso", model.Nome), JsonConvert.SerializeObject(model), Infra.CrossCutting.Log.Enum.LogSourceEnum.Api, Infra.CrossCutting.Log.Enum.LogTypeEnum.Navegacao);
+                    await _logService.SaveAuditAsync(HttpContext.TraceIdentifier, string.Format("Usuário {0} alterado com sucesso", model.Nome), JsonConvert.SerializeObject(model), Infra.CrossCutting.Log.Enum.LogSourceEnum.Api, Infra.CrossCutting.Log.Enum.LogTypeEnum.Navegacao);
                     var response = ("Usuário " + model.Nome + " alterado com sucesso!");
 
                     return Response(response);

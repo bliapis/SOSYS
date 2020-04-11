@@ -414,6 +414,9 @@
               "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Identity\\LT.SO.Infra.CrossCutting.Identity.csproj": {
                 "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Identity\\LT.SO.Infra.CrossCutting.Identity.csproj"
               },
+              "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj": {
+                "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj"
+              },
               "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Gerencial\\LT.SO.Infra.Data.Gerencial.csproj": {
                 "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Gerencial\\LT.SO.Infra.Data.Gerencial.csproj"
               },
@@ -504,6 +507,66 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj",
+        "projectName": "LT.SO.Infra.Data.Common",
+        "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj",
+        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.4.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
               "autoReferenced": true
             }
           },
@@ -645,6 +708,9 @@
             "projectReferences": {
               "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj": {
                 "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Log\\LT.SO.Infra.CrossCutting.Log.csproj"
+              },
+              "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj": {
+                "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj"
               }
             }
           }
@@ -705,6 +771,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.4.4, )"
             }
           },
           "imports": [
