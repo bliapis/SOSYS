@@ -5548,6 +5548,7 @@
           "LT.SO.Infra.CrossCutting.Bus": "1.0.0",
           "LT.SO.Infra.CrossCutting.Identity": "1.0.0",
           "LT.SO.Infra.Data.Common": "1.0.0",
+          "LT.SO.Infra.Data.Event": "1.0.0",
           "LT.SO.Infra.Data.Gerencial": "1.0.0",
           "LT.SO.Infra.Data.Log": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
@@ -5585,6 +5586,21 @@
         },
         "runtime": {
           "bin/placeholder/LT.SO.Infra.Data.Common.dll": {}
+        }
+      },
+      "LT.SO.Infra.Data.Event/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "LT.SO.Domain.Core": "1.0.0",
+          "LT.SO.Domain.Gerencial": "1.0.0",
+          "LT.SO.Infra.Data.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LT.SO.Infra.Data.Event.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LT.SO.Infra.Data.Event.dll": {}
         }
       },
       "LT.SO.Infra.Data.Gerencial/1.0.0": {
@@ -5632,6 +5648,22 @@
         },
         "runtime": {
           "bin/placeholder/LT.SO.Infra.Data.Log.dll": {}
+        }
+      },
+      "LT.SO.Services.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "LT.SO.Infra.CrossCutting.Bus": "1.0.0",
+          "Microsoft.AspNetCore": "2.1.0",
+          "Microsoft.AspNetCore.Hosting": "2.1.0",
+          "RawRabbit": "2.0.0-beta8"
+        },
+        "compile": {
+          "bin/placeholder/LT.SO.Services.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LT.SO.Services.Common.dll": {}
         }
       }
     }
@@ -14687,6 +14719,11 @@
       "path": "../LT.SO.Infra.Data.Common/LT.SO.Infra.Data.Common.csproj",
       "msbuildProject": "../LT.SO.Infra.Data.Common/LT.SO.Infra.Data.Common.csproj"
     },
+    "LT.SO.Infra.Data.Event/1.0.0": {
+      "type": "project",
+      "path": "../LT.SO.Infra.Data.CommandEvent/LT.SO.Infra.Data.Event.csproj",
+      "msbuildProject": "../LT.SO.Infra.Data.CommandEvent/LT.SO.Infra.Data.Event.csproj"
+    },
     "LT.SO.Infra.Data.Gerencial/1.0.0": {
       "type": "project",
       "path": "../LT.SO.Infra.Data.Gerencial/LT.SO.Infra.Data.Gerencial.csproj",
@@ -14696,6 +14733,11 @@
       "type": "project",
       "path": "../LT.SO.Infra.Data.Log/LT.SO.Infra.Data.Log.csproj",
       "msbuildProject": "../LT.SO.Infra.Data.Log/LT.SO.Infra.Data.Log.csproj"
+    },
+    "LT.SO.Services.Common/1.0.0": {
+      "type": "project",
+      "path": "../LT.SO.Services.Common/LT.SO.Services.Common.csproj",
+      "msbuildProject": "../LT.SO.Services.Common/LT.SO.Services.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -14707,6 +14749,7 @@
       "LT.SO.Infra.CrossCutting.AspNetFilters >= 1.0.0",
       "LT.SO.Infra.CrossCutting.Identity >= 1.0.0",
       "LT.SO.Infra.CrossCutting.IoC >= 1.0.0",
+      "LT.SO.Services.Common >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -14755,6 +14798,9 @@
             },
             "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.IoC\\LT.SO.Infra.CrossCutting.IoC.csproj": {
               "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.IoC\\LT.SO.Infra.CrossCutting.IoC.csproj"
+            },
+            "D:\\Projects\\SOSYS\\src\\LT.SO.Services.Common\\LT.SO.Services.Common.csproj": {
+              "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Services.Common\\LT.SO.Services.Common.csproj"
             }
           }
         }

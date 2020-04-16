@@ -65,7 +65,7 @@ using LT.SO.Site.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(138, 1263, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea9ef6afe2d145abad79a93fa53c3e94", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26b48881ed3e411dabac2a42ec4934fd", async() => {
                 BeginContext(144, 1250, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"" />
@@ -102,7 +102,7 @@ using LT.SO.Site.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1403, 3596, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41d10e105c884b7a983e44b79f179322", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8f25d48a3d84299907f627bbcb88dd6", async() => {
                 BeginContext(1426, 749, true);
                 WriteLiteral(@"
     <!-- begin #page-loader -->

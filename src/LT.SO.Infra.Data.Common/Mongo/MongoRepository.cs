@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using System;
+using MongoDB.Driver;
 
 namespace LT.SO.Infra.Data.Common.Mongo
 {
@@ -6,12 +7,12 @@ namespace LT.SO.Infra.Data.Common.Mongo
     {
         private readonly IMongoDatabase _database;
         private readonly string _collectionName;
+        private readonly Type typeT = typeof(T);
 
-        public MongoRepository(IMongoDatabase database,
-            string collectionName)
+        public MongoRepository(IMongoDatabase database)
         {
             _database = database;
-            _collectionName = collectionName;
+            _collectionName = typeT.Name;
         }
 
         protected IMongoCollection<T> Collection

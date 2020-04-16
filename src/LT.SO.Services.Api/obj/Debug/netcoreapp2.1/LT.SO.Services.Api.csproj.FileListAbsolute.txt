@@ -35,3 +35,7 @@ D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.
 D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.csproj.CopyComplete
 D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Api\obj\Debug\netcoreapp2.1\LT.SO.Services.Api.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.pdb

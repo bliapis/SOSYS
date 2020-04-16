@@ -40,6 +40,7 @@
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.AspNetFilters\LT.SO.Infra.CrossCutting.AspNetFilters.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Identity\LT.SO.Infra.CrossCutting.Identity.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.IoC\LT.SO.Infra.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\LT.SO.Services.Common\LT.SO.Services.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

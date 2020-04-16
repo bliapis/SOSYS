@@ -6,6 +6,7 @@ using AutoMapper;
 using LT.SO.Domain.Core.Bus;
 using LT.SO.Domain.Core.Interfaces;
 using LT.SO.Domain.Core.Notifications;
+using LT.SO.Domain.Core.Repository;
 using LT.SO.Infra.CrossCutting.Bus;
 using LT.SO.Infra.CrossCutting.AspNetFilters;
 using LT.SO.Infra.CrossCutting.Identity.Models;
@@ -19,6 +20,7 @@ using LT.SO.Infra.Data.Gerencial.Repository;
 using LT.SO.Infra.Data.Log.Seed;
 using LT.SO.Infra.CrossCutting.Bus.RabbitMQ;
 using LT.SO.Infra.Data.Common.Mongo;
+using LT.SO.Infra.Data.Event;
 using LT.SO.Domain.Permissoes.Permissao.Service;
 using LT.SO.Domain.Permissoes.Permissao.Interfaces.Services;
 using LT.SO.Domain.Permissoes.GrupoAcesso.Services;
@@ -31,6 +33,7 @@ using LT.SO.Domain.Permissoes.Menu.Interfaces.Repository;
 using LT.SO.Domain.Gerencial.Usuario.Services;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Service;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Repository;
+using LT.SO.Domain.Gerencial.Usuario.Events;
 
 namespace LT.SO.Infra.CrossCutting.IoC
 {
@@ -58,14 +61,25 @@ namespace LT.SO.Infra.CrossCutting.IoC
             services.AddScoped<IMenuService, MenuService>();
             services.AddScoped<IUsuarioService, UsuarioService>();
 
+            // Domain - Commands
+            //services.AddScoped<IHandler<CreateUsuarioCommand>, UsuarioCommandHandler>();
+
+            // Domain - Events
+            services.AddScoped<IHandler<UsuarioCreatedEvent>, UsuarioEventHandler>();
+
             #endregion
 
             #endregion
 
             #region Infra
 
-            //LogData
             services.AddMongoDB(configuration);
+
+            //Event
+            services.AddScoped<IEventRepository<UsuarioCreatedEvent>, EventRepository<UsuarioCreatedEvent>>();
+            services.AddScoped<IEventRepository<CreateUsuarioRejectedEvent>, EventRepository<CreateUsuarioRejectedEvent>>();
+
+            //LogData
             services.AddScoped<IDatabaseSeeder<CustomMongoSeeder>, CustomMongoSeeder>();
             services.AddScoped<ILogRepository, LogRepository>();
             services.AddScoped<ILogAuditoriaRepository, LogAuditoriaRepository>();

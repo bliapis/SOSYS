@@ -4324,6 +4324,21 @@
           "bin/placeholder/LT.SO.Infra.Data.Common.dll": {}
         }
       },
+      "LT.SO.Infra.Data.Event/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "LT.SO.Domain.Core": "1.0.0",
+          "LT.SO.Domain.Gerencial": "1.0.0",
+          "LT.SO.Infra.Data.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LT.SO.Infra.Data.Event.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LT.SO.Infra.Data.Event.dll": {}
+        }
+      },
       "LT.SO.Infra.Data.Gerencial/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12127,6 +12142,11 @@
       "path": "../LT.SO.Infra.Data.Common/LT.SO.Infra.Data.Common.csproj",
       "msbuildProject": "../LT.SO.Infra.Data.Common/LT.SO.Infra.Data.Common.csproj"
     },
+    "LT.SO.Infra.Data.Event/1.0.0": {
+      "type": "project",
+      "path": "../LT.SO.Infra.Data.CommandEvent/LT.SO.Infra.Data.Event.csproj",
+      "msbuildProject": "../LT.SO.Infra.Data.CommandEvent/LT.SO.Infra.Data.Event.csproj"
+    },
     "LT.SO.Infra.Data.Gerencial/1.0.0": {
       "type": "project",
       "path": "../LT.SO.Infra.Data.Gerencial/LT.SO.Infra.Data.Gerencial.csproj",
@@ -12146,6 +12166,7 @@
       "LT.SO.Infra.CrossCutting.Bus >= 1.0.0",
       "LT.SO.Infra.CrossCutting.Identity >= 1.0.0",
       "LT.SO.Infra.Data.Common >= 1.0.0",
+      "LT.SO.Infra.Data.Event >= 1.0.0",
       "LT.SO.Infra.Data.Gerencial >= 1.0.0",
       "LT.SO.Infra.Data.Log >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 2.1.1",
@@ -12193,6 +12214,9 @@
             },
             "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Identity\\LT.SO.Infra.CrossCutting.Identity.csproj": {
               "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.CrossCutting.Identity\\LT.SO.Infra.CrossCutting.Identity.csproj"
+            },
+            "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.CommandEvent\\LT.SO.Infra.Data.Event.csproj": {
+              "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.CommandEvent\\LT.SO.Infra.Data.Event.csproj"
             },
             "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj": {
               "projectPath": "D:\\Projects\\SOSYS\\src\\LT.SO.Infra.Data.Common\\LT.SO.Infra.Data.Common.csproj"

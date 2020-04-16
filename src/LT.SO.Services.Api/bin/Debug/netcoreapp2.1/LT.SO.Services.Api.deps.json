@@ -31,6 +31,7 @@
           "LT.SO.Infra.CrossCutting.AspNetFilters": "1.0.0",
           "LT.SO.Infra.CrossCutting.Identity": "1.0.0",
           "LT.SO.Infra.CrossCutting.IoC": "1.0.0",
+          "LT.SO.Services.Common": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -1915,6 +1916,7 @@
           "LT.SO.Infra.CrossCutting.Bus": "1.0.0",
           "LT.SO.Infra.CrossCutting.Identity": "1.0.0",
           "LT.SO.Infra.Data.Common": "1.0.0",
+          "LT.SO.Infra.Data.Event": "1.0.0",
           "LT.SO.Infra.Data.Gerencial": "1.0.0",
           "LT.SO.Infra.Data.Log": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
@@ -1948,6 +1950,19 @@
         },
         "compile": {
           "LT.SO.Infra.Data.Common.dll": {}
+        }
+      },
+      "LT.SO.Infra.Data.Event/1.0.0": {
+        "dependencies": {
+          "LT.SO.Domain.Core": "1.0.0",
+          "LT.SO.Domain.Gerencial": "1.0.0",
+          "LT.SO.Infra.Data.Common": "1.0.0"
+        },
+        "runtime": {
+          "LT.SO.Infra.Data.Event.dll": {}
+        },
+        "compile": {
+          "LT.SO.Infra.Data.Event.dll": {}
         }
       },
       "LT.SO.Infra.Data.Gerencial/1.0.0": {
@@ -1991,6 +2006,20 @@
         },
         "compile": {
           "LT.SO.Infra.Data.Log.dll": {}
+        }
+      },
+      "LT.SO.Services.Common/1.0.0": {
+        "dependencies": {
+          "LT.SO.Infra.CrossCutting.Bus": "1.0.0",
+          "Microsoft.AspNetCore": "2.1.1",
+          "Microsoft.AspNetCore.Hosting": "2.1.1",
+          "RawRabbit": "2.0.0-beta8"
+        },
+        "runtime": {
+          "LT.SO.Services.Common.dll": {}
+        },
+        "compile": {
+          "LT.SO.Services.Common.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -5341,12 +5370,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "LT.SO.Infra.Data.Event/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "LT.SO.Infra.Data.Gerencial/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "LT.SO.Infra.Data.Log/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LT.SO.Services.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -10,7 +10,7 @@ namespace LT.SO.Infra.Data.Log.Repository
     {
         private readonly IMongoDatabase _database;
 
-        public LogRepository(IMongoDatabase database) : base(database, "Logs")
+        public LogRepository(IMongoDatabase database) : base(database)
         {
             _database = database;
         }

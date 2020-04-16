@@ -6,3 +6,4 @@ D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netcoreapp2.1\LT.SO.Domain.Cor
 D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netcoreapp2.1\LT.SO.Domain.Core.AssemblyInfo.cs
 D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netcoreapp2.1\LT.SO.Domain.Core.dll
 D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netcoreapp2.1\LT.SO.Domain.Core.pdb
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netcoreapp2.1\LT.SO.Domain.Core.csprojAssemblyReference.cache

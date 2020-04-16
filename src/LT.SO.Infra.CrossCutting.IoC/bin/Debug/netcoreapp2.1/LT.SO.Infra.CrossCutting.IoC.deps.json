@@ -14,6 +14,7 @@
           "LT.SO.Infra.CrossCutting.Bus": "1.0.0",
           "LT.SO.Infra.CrossCutting.Identity": "1.0.0",
           "LT.SO.Infra.Data.Common": "1.0.0",
+          "LT.SO.Infra.Data.Event": "1.0.0",
           "LT.SO.Infra.Data.Gerencial": "1.0.0",
           "LT.SO.Infra.Data.Log": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
@@ -3234,6 +3235,16 @@
           "LT.SO.Infra.Data.Common.dll": {}
         }
       },
+      "LT.SO.Infra.Data.Event/1.0.0": {
+        "dependencies": {
+          "LT.SO.Domain.Core": "1.0.0",
+          "LT.SO.Domain.Gerencial": "1.0.0",
+          "LT.SO.Infra.Data.Common": "1.0.0"
+        },
+        "runtime": {
+          "LT.SO.Infra.Data.Event.dll": {}
+        }
+      },
       "LT.SO.Infra.Data.Gerencial/1.0.0": {
         "dependencies": {
           "LT.SO.Domain.Gerencial": "1.0.0",
@@ -5116,6 +5127,11 @@
       "sha512": ""
     },
     "LT.SO.Infra.Data.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LT.SO.Infra.Data.Event/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
