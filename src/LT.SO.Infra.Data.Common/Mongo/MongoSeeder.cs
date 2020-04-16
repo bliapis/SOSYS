@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace LT.SO.Infra.Data.Common.Mongo
 {
-    public class MongoSeeder : IDatabaseSeeder
+    public abstract class MongoSeeder<T> : IDatabaseSeeder<T> where T : MongoSeeder<T>
     {
         protected readonly IMongoDatabase Database;
 

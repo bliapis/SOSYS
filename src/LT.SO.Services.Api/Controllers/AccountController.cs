@@ -20,12 +20,12 @@ using LT.SO.Domain.Core.Interfaces;
 using LT.SO.Domain.Core.Notifications;
 using LT.SO.Domain.Gerencial.Usuario.Entities;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Service;
-using LT.SO.Infra.CrossCutting.Identity.Data;
-using LT.SO.Infra.CrossCutting.Identity.Models;
-using LT.SO.Infra.CrossCutting.Identity.Authorization;
 using LT.SO.Domain.Permissoes.Permissao.Entities;
 using LT.SO.Domain.Permissoes.Permissao.Interfaces.Services;
 using LT.SO.Domain.Permissoes.GrupoAcesso.Interfaces.Service;
+using LT.SO.Infra.CrossCutting.Identity.Data;
+using LT.SO.Infra.CrossCutting.Identity.Models;
+using LT.SO.Infra.CrossCutting.Identity.Authorization;
 using LT.SO.Infra.CrossCutting.Log.Services;
 
 namespace LT.SO.Services.Api.Controllers

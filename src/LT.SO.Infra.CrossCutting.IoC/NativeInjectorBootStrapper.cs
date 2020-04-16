@@ -16,6 +16,8 @@ using LT.SO.Infra.Data.Gerencial.Context;
 using LT.SO.Infra.Data.Gerencial.UoW;
 using LT.SO.Infra.Data.Log.Repository;
 using LT.SO.Infra.Data.Gerencial.Repository;
+using LT.SO.Infra.Data.Log.Seed;
+using LT.SO.Infra.CrossCutting.Bus.RabbitMQ;
 using LT.SO.Infra.Data.Common.Mongo;
 using LT.SO.Domain.Permissoes.Permissao.Service;
 using LT.SO.Domain.Permissoes.Permissao.Interfaces.Services;
@@ -29,7 +31,6 @@ using LT.SO.Domain.Permissoes.Menu.Interfaces.Repository;
 using LT.SO.Domain.Gerencial.Usuario.Services;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Service;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Repository;
-using LT.SO.Infra.Data.Log.Seed;
 
 namespace LT.SO.Infra.CrossCutting.IoC
 {
@@ -65,7 +66,7 @@ namespace LT.SO.Infra.CrossCutting.IoC
 
             //LogData
             services.AddMongoDB(configuration);
-            services.AddScoped<IDatabaseSeeder, CustomMongoSeeder>();
+            services.AddScoped<IDatabaseSeeder<CustomMongoSeeder>, CustomMongoSeeder>();
             services.AddScoped<ILogRepository, LogRepository>();
             services.AddScoped<ILogAuditoriaRepository, LogAuditoriaRepository>();
 
@@ -84,6 +85,7 @@ namespace LT.SO.Infra.CrossCutting.IoC
             #region CrossCutting
             //Bus
             services.AddScoped<IBus, InMemoryBus>();
+            services.AddRabbitMq(configuration);
 
             //Log
             services.AddScoped<ILogService, LogService>();

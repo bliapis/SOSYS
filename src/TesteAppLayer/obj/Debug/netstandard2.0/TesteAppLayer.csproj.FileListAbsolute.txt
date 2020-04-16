@@ -1,0 +1,9 @@
+D:\Projects\SOSYS\src\TesteAppLayer\bin\Debug\netstandard2.0\TesteAppLayer.deps.json
+D:\Projects\SOSYS\src\TesteAppLayer\bin\Debug\netstandard2.0\TesteAppLayer.dll
+D:\Projects\SOSYS\src\TesteAppLayer\bin\Debug\netstandard2.0\TesteAppLayer.pdb
+D:\Projects\SOSYS\src\TesteAppLayer\obj\Debug\netstandard2.0\TesteAppLayer.csprojAssemblyReference.cache
+D:\Projects\SOSYS\src\TesteAppLayer\obj\Debug\netstandard2.0\TesteAppLayer.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\TesteAppLayer\obj\Debug\netstandard2.0\TesteAppLayer.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\TesteAppLayer\obj\Debug\netstandard2.0\TesteAppLayer.AssemblyInfo.cs
+D:\Projects\SOSYS\src\TesteAppLayer\obj\Debug\netstandard2.0\TesteAppLayer.dll
+D:\Projects\SOSYS\src\TesteAppLayer\obj\Debug\netstandard2.0\TesteAppLayer.pdb

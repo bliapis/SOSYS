@@ -1,4 +1,4 @@
-﻿using LT.SO.Domain.Core;
+﻿using LT.SO.Domain.Core.Commands;
 using LT.SO.Domain.Core.Interfaces;
 using LT.SO.Infra.Data.Gerencial.Context;
 

@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.Extensions.Options;
-using MongoDB.Bson;
+using LT.SO.Infra.Data.Common.Mongo;
 using MongoDB.Driver;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Conventions;
 
-namespace LT.SO.Infra.Data.Common.Mongo
+namespace LT.SO.Infra.Data.Common
 {
     public class MongoInitializer : IDatabaseInitializer
     {
@@ -53,6 +54,7 @@ namespace LT.SO.Infra.Data.Common.Mongo
                 new EnumRepresentationConvention(BsonType.String),
                 new CamelCaseElementNameConvention()
             };
+
         }
     }
 }

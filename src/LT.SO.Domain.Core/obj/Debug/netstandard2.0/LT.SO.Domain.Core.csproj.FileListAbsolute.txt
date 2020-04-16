@@ -1,0 +1,8 @@
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\bin\Debug\netstandard2.0\LT.SO.Domain.Core.deps.json
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\bin\Debug\netstandard2.0\LT.SO.Domain.Core.dll
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\bin\Debug\netstandard2.0\LT.SO.Domain.Core.pdb
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netstandard2.0\LT.SO.Domain.Core.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netstandard2.0\LT.SO.Domain.Core.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netstandard2.0\LT.SO.Domain.Core.AssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netstandard2.0\LT.SO.Domain.Core.dll
+D:\Projects\SOSYS\src\LT.SO.Domain.Core\obj\Debug\netstandard2.0\LT.SO.Domain.Core.pdb

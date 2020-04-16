@@ -1,0 +1,14 @@
+D:\Projects\SOSYS\src\LT.SO.Services.Common\obj\Debug\netcoreapp2.1\LT.SO.Services.Common.csprojAssemblyReference.cache
+D:\Projects\SOSYS\src\LT.SO.Services.Common\obj\Debug\netcoreapp2.1\LT.SO.Services.Common.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Services.Common\obj\Debug\netcoreapp2.1\LT.SO.Services.Common.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Services.Common\obj\Debug\netcoreapp2.1\LT.SO.Services.Common.AssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Services.Common\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.deps.json
+D:\Projects\SOSYS\src\LT.SO.Services.Common\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Common\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Common\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Common\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Common\bin\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.Bus.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Common\bin\Debug\netcoreapp2.1\LT.SO.Domain.Core.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Common\obj\Debug\netcoreapp2.1\LT.SO.Services.Common.csproj.CopyComplete
+D:\Projects\SOSYS\src\LT.SO.Services.Common\obj\Debug\netcoreapp2.1\LT.SO.Services.Common.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Common\obj\Debug\netcoreapp2.1\LT.SO.Services.Common.pdb

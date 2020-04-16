@@ -24,7 +24,7 @@ namespace LT.SO.Domain.Gerencial.Usuario.Entities
         public string CPF { get; private set; }
         public string Email { get; private set; }
         public bool Ativo { get; private set; }
-        public DateTime DataCadastro { get; set; }
+        public DateTime DataCadastro { get; private set; }
 
         public Guid AspNetUserId { get; private set; }
 

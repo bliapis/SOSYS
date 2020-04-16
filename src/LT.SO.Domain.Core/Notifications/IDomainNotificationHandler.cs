@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using LT.SO.Domain.Core.Events;
 using LT.SO.Domain.Core.Interfaces;
 
 namespace LT.SO.Domain.Core.Notifications

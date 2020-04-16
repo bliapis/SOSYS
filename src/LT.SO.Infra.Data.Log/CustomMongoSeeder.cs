@@ -9,7 +9,7 @@ using LT.SO.Infra.Data.Common.Mongo;
 
 namespace LT.SO.Infra.Data.Log.Seed
 {
-    public class CustomMongoSeeder : MongoSeeder
+    public class CustomMongoSeeder : MongoSeeder<CustomMongoSeeder>
     {
         private readonly ILogRepository _logRepo;
         private readonly ILogAuditoriaRepository _logAuditRepo;

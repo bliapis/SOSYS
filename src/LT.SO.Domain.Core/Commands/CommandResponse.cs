@@ -1,4 +1,4 @@
-﻿namespace LT.SO.Domain.Core
+﻿namespace LT.SO.Domain.Core.Commands
 {
     public class CommandResponse
     {

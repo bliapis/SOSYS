@@ -7,6 +7,8 @@ namespace LT.SO.Infra.Data.Common.Mongo
 {
     public static class Extensions
     {
+        public delegate IDatabaseInitializer ServiceResolver(string key);
+
         public static void AddMongoDB(this IServiceCollection services, IConfiguration config)
         {
             services.Configure<MongoOptions>(config.GetSection("mongo"));
@@ -26,7 +28,7 @@ namespace LT.SO.Infra.Data.Common.Mongo
             });
 
             services.AddScoped<IDatabaseInitializer, MongoInitializer>();
-            services.AddScoped<IDatabaseSeeder, MongoSeeder>();
+            services.AddScoped<IDatabaseSeeder, Seeder>();
         }
     }
 }

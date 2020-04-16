@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="5.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.2" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LT.SO.Domain.Gerencial\LT.SO.Domain.Gerencial.csproj" />
+    <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Identity\LT.SO.Infra.CrossCutting.Identity.csproj" />
+  </ItemGroup>
+
+</Project>

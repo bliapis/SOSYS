@@ -1,0 +1,12 @@
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\bin\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.deps.json
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\bin\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\bin\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\bin\Debug\netstandard2.0\LT.SO.Domain.Core.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\bin\Debug\netstandard2.0\LT.SO.Domain.Core.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\obj\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.csprojAssemblyReference.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\obj\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.csproj.CoreCompileInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\obj\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.AssemblyInfoInputs.cache
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\obj\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.AssemblyInfo.cs
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\obj\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.csproj.CopyComplete
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\obj\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.Log\obj\Debug\netstandard2.0\LT.SO.Infra.CrossCutting.Log.pdb
