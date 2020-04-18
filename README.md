@@ -17,8 +17,9 @@ Ok - Alterar o Banco de LOGS para MongoDB
 - Aplicar CQRS no projeto a partir do Domain "Gerencial", nas funcionalidades básicas do usuário.
   
   -- Salvar os eventos lançados no MongoDb
-- Implementar RabbitMQ - Alterar o ServiceBus atual in memory, e utilizar o client do RabbitMQ (RawRabbit).
-- Criar o Service para fazer subscribe nos tópicos do módulo Gerencial, que serão criados no Rabbit e persistir as informações.
+- Implementar RabbitMQ - Existe apenas um ServiceBus in memory, utilizar o client do RabbitMQ (RawRabbit) para criar um novo.
+- Criar o Service para fazer subscribe nos tópicos do Rabbit, relacionados ao módulo Gerencial.
+- Criar o handler e persistir as informações 
 - Dockerizing
 
 ### Roadmap 2
