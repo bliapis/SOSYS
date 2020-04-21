@@ -22,6 +22,7 @@ swagger, entre outros.
 4 - Inicie a API: LT.SO.Services.Api
 
 5 - Inicie o service: LT.SO.Services.Gerencial.Usuarios
+
 Obs: Swagger instalado na API, features de cadastro de usuário e login concluídas.
 
 ### Roadmap 1
