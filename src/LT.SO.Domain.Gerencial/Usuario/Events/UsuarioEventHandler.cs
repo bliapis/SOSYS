@@ -6,26 +6,32 @@ using LT.SO.Domain.Core.Repository;
 namespace LT.SO.Domain.Gerencial.Usuario.Events
 {
     public class UsuarioEventHandler :
-        IHandler<UsuarioCreatedEvent>
+        IHandlerMS<UsuarioCreatedEvent>,
+        IHandlerMS<CreateUsuarioRejectedEvent>
     {
-        private readonly IEventRepository<UsuarioCreatedEvent> _repo;
+        //TODO: Melhorar essa implementação
+        private readonly IEventRepository<UsuarioCreatedEvent> _repoUsuarioCreated;
+        private readonly IEventRepository<CreateUsuarioRejectedEvent> _repoUsuarioRejected;
 
         public UsuarioEventHandler(
-            IEventRepository<UsuarioCreatedEvent> repo)
+            IEventRepository<UsuarioCreatedEvent> repoUsuarioCreated,
+            IEventRepository<CreateUsuarioRejectedEvent> repoUsuarioRejected)
         {
-            _repo = repo;
-        }
-
-        public void Handle(UsuarioCreatedEvent message)
-        {
-            _repo.AddAsync(message);
-            Console.WriteLine($"Lancamento criado: @{@message.Id}");
+            _repoUsuarioCreated = repoUsuarioCreated;
+            _repoUsuarioRejected = repoUsuarioRejected;
         }
 
         public async Task HandleAsync(UsuarioCreatedEvent message)
         {
-            await _repo.AddAsync(message);
-            Console.WriteLine($"Lancamento criado: @{@message.Id}");
+
+            await _repoUsuarioCreated.AddAsync(message);
+            Console.WriteLine($"Usuario criado: @{@message.Id}");
+        }
+
+        public async Task HandleAsync(CreateUsuarioRejectedEvent message)
+        {
+            await _repoUsuarioRejected.AddAsync(message);
+            Console.WriteLine($"Usuario rejeitado pelo serviço: @{@message.Id}");
         }
     }
 }

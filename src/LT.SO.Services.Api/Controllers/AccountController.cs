@@ -12,7 +12,6 @@ using Microsoft.Extensions.Options;
 using AutoMapper;
 using Newtonsoft.Json;
 using LT.SO.Services.Api.Models;
-using LT.SO.Services.Api.ViewModels.Gerencial.Usuario;
 using LT.SO.Services.Api.ViewModels.Gerencial.Permissoes;
 using LT.SO.Services.Api.ViewModels.Gerencial.GrupoAcesso;
 using LT.SO.Domain.Core.Bus;
@@ -27,6 +26,8 @@ using LT.SO.Infra.CrossCutting.Identity.Data;
 using LT.SO.Infra.CrossCutting.Identity.Models;
 using LT.SO.Infra.CrossCutting.Identity.Authorization;
 using LT.SO.Infra.CrossCutting.Log.Services;
+using LT.SO.Application.Services.Usuario;
+using LT.SO.Application.ViewModels.Gerencial.Usuario;
 
 namespace LT.SO.Services.Api.Controllers
 {
@@ -35,16 +36,17 @@ namespace LT.SO.Services.Api.Controllers
     public class AccountController : BaseController
     {
         private readonly IBus _bus;
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly JwtTokenOptions _jwtTokenOptions;
         private readonly IMapper _mapper;
         private readonly ILogger _logger;
         private readonly ILogService _logService;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly JwtTokenOptions _jwtTokenOptions;
         private readonly IUsuarioService _usuarioService;
         private readonly IGrupoAcessoService _grupoAcessoService;
         private readonly IPermissaoService _permissaoService;
         private readonly Infra.CrossCutting.Identity.Services.IEmailSender _emailSender;
+        private readonly IUsuarioAppService _usuarioAppService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
@@ -60,8 +62,11 @@ namespace LT.SO.Services.Api.Controllers
             IOptions<JwtTokenOptions> jwtTokenOptions,
             IDomainNotificationHandler<DomainNotification> notifications,
             IOptions<AuditConfig> auditConfig,
-            Infra.CrossCutting.Identity.Services.IEmailSender emailSender) : base(notifications, user, bus, auditConfig)
+            Infra.CrossCutting.Identity.Services.IEmailSender emailSender,
+            IUsuarioAppService usuarioAppService) : base(notifications, user, bus, auditConfig)
         {
+            _usuarioAppService = usuarioAppService;
+
             _bus = bus;
             _mapper = mapper;
             _userManager = userManager;
@@ -94,32 +99,10 @@ namespace LT.SO.Services.Api.Controllers
                 NotificarErroModelInvalida();
                 return Response(model);
             }
-            
-            var user = new ApplicationUser { UserName = model.Usuario, Email = model.Email, Active = true, FirstPass = true };
-            var result = await _userManager.CreateAsync(user, model.Senha);
 
-            if (result.Succeeded)
-            {
-                var usuarioModel = _mapper.Map<UsuarioModel>(model);
-                usuarioModel.SetAspNetUserId(user.Id);
-                usuarioModel.AtivarUsuario();
+            var commandId = await _usuarioAppService.Cadastrar(model);
 
-                _usuarioService.Adicionar(usuarioModel);
-
-                if (!OperacaoValida())
-                {
-                    await _userManager.DeleteAsync(user);
-                    return Response(model);
-                }
-                
-                await _logService.SaveAuditAsync(HttpContext.TraceIdentifier, string.Format("Usuário {0} criado com sucesso", model.Nome), JsonConvert.SerializeObject(model), Infra.CrossCutting.Log.Enum.LogSourceEnum.Api, Infra.CrossCutting.Log.Enum.LogTypeEnum.Navegacao);
-                var response = await GenerateUserToken(new LoginModel { UserName = model.Usuario, Password = model.Senha });
-
-                return Response(response);
-            }
-
-            AdicionarErrosIdentity(result);
-            return Response(model);
+            return Accepted($"usuario/{commandId}");
         }
 
 
@@ -432,7 +415,7 @@ namespace LT.SO.Services.Api.Controllers
         [HttpPost]
         [Route("login")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(LoginModel model)
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -440,28 +423,7 @@ namespace LT.SO.Services.Api.Controllers
                 return Response(model);
             }
 
-            var user = await _userManager.FindByNameAsync(model.UserName);
-
-            if (user != null && user.Active)
-            {
-                var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, lockoutOnFailure: true);
-
-                if (result.Succeeded)
-                {
-                    _logger.LogInformation(1, string.Format("Usuário {0} logado com sucesso em {1}", model.UserName, DateTime.Now));
-
-                    var response = await GenerateUserToken(model);
-                    return Response(response);
-                }
-
-                if (_userManager.IsLockedOutAsync(user).Result)
-                {
-                    NotificarErro("2", "Seu usuário foi bloqueado por 10 minutos, devido ao excesso de tentativas de acesso com erro.");
-                }
-            }
-
-            NotificarErro("2", "Falha ao realizar o login.");
-            return Response(model);
+            return Response(await _usuarioAppService.Login(model));
         }
 
 

@@ -30,3 +30,5 @@ D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.1\LT.SO
 D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.IoC\obj\Debug\netcoreapp2.1\LT.SO.Infra.CrossCutting.IoC.pdb
 D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.dll
 D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.pdb
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.1\LT.SO.Application.dll
+D:\Projects\SOSYS\src\LT.SO.Infra.CrossCutting.IoC\bin\Debug\netcoreapp2.1\LT.SO.Application.pdb

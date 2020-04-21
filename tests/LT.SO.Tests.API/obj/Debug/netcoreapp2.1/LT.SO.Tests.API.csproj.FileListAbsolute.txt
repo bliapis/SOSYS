@@ -37,3 +37,9 @@ D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.csproj.CopyComplete
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.dll
 D:\Projects\SOSYS\tests\LT.SO.Tests.API\obj\Debug\netcoreapp2.1\LT.SO.Tests.API.pdb
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.dll
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.dll
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.pdb
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.pdb
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Application.dll
+D:\Projects\SOSYS\tests\LT.SO.Tests.API\bin\Debug\netcoreapp2.1\LT.SO.Application.pdb

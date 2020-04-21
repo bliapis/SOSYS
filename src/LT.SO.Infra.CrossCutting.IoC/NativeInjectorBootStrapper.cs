@@ -34,6 +34,7 @@ using LT.SO.Domain.Gerencial.Usuario.Services;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Service;
 using LT.SO.Domain.Gerencial.Usuario.Interfaces.Repository;
 using LT.SO.Domain.Gerencial.Usuario.Events;
+using LT.SO.Application.Services.Usuario;
 
 namespace LT.SO.Infra.CrossCutting.IoC
 {
@@ -48,6 +49,11 @@ namespace LT.SO.Infra.CrossCutting.IoC
             //Identity
             // services.AddSingleton<IEmailSender, EmailSender>();
             services.AddScoped<IUser, AspNetUser>();
+
+            #region Application
+            //Usuario
+            services.AddScoped<IUsuarioAppService, UsuarioAppService>();
+            #endregion
 
             #region Domains
 
@@ -65,7 +71,7 @@ namespace LT.SO.Infra.CrossCutting.IoC
             //services.AddScoped<IHandler<CreateUsuarioCommand>, UsuarioCommandHandler>();
 
             // Domain - Events
-            services.AddScoped<IHandler<UsuarioCreatedEvent>, UsuarioEventHandler>();
+            //services.AddScoped<IHandler<UsuarioCreatedEvent>, UsuarioEventHandler>();
 
             #endregion
 
@@ -99,6 +105,7 @@ namespace LT.SO.Infra.CrossCutting.IoC
             #region CrossCutting
             //Bus
             services.AddScoped<IBus, InMemoryBus>();
+            services.AddScoped<IBusMS, BusMS>();
             services.AddRabbitMq(configuration);
 
             //Log

@@ -14,6 +14,7 @@ namespace LT.SO.Infra.CrossCutting.Bus
 
         public void RaiseEvent<T>(T theEvent) where T : Event
         {
+
             Publish(theEvent);
         }
 

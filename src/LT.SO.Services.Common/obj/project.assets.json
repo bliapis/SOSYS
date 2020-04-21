@@ -945,11 +945,11 @@
           "lib/netstandard1.5/RabbitMQ.Client.dll": {}
         }
       },
-      "RawRabbit/2.0.0-beta8": {
+      "RawRabbit/2.0.0-rc5": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "9.0.1",
+          "Newtonsoft.Json": "10.0.1",
           "RabbitMQ.Client": "5.0.1"
         },
         "compile": {
@@ -959,12 +959,12 @@
           "lib/netstandard1.5/RawRabbit.dll": {}
         }
       },
-      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-rc5": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "1.0.2",
           "NETStandard.Library": "1.6.1",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "compile": {
           "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
@@ -973,11 +973,11 @@
           "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
         }
       },
-      "RawRabbit.Operations.Publish/2.0.0-beta8": {
+      "RawRabbit.Operations.Publish/2.0.0-rc5": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "compile": {
           "lib/netstandard1.5/RawRabbit.Operations.Publish.dll": {}
@@ -986,11 +986,11 @@
           "lib/netstandard1.5/RawRabbit.Operations.Publish.dll": {}
         }
       },
-      "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
+      "RawRabbit.Operations.Subscribe/2.0.0-rc5": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "compile": {
           "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll": {}
@@ -2041,10 +2041,10 @@
         "dependencies": {
           "LT.SO.Domain.Core": "1.0.0",
           "Microsoft.Extensions.Configuration.Binder": "2.1.0",
-          "RawRabbit": "2.0.0-beta8",
-          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-beta8",
-          "RawRabbit.Operations.Publish": "2.0.0-beta8",
-          "RawRabbit.Operations.Subscribe": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5",
+          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-rc5",
+          "RawRabbit.Operations.Publish": "2.0.0-rc5",
+          "RawRabbit.Operations.Subscribe": "2.0.0-rc5"
         },
         "compile": {
           "bin/placeholder/LT.SO.Infra.CrossCutting.Bus.dll": {}
@@ -3263,55 +3263,55 @@
         "rabbitmq.client.nuspec"
       ]
     },
-    "RawRabbit/2.0.0-beta8": {
-      "sha512": "gAXa06ZSBbNW4ykL4reUgNWIVoWoOeRW233smeluY0t/mtuBTbN6/Hh7YyvxdrNvNADhn+QvM2/GvY994tor5A==",
+    "RawRabbit/2.0.0-rc5": {
+      "sha512": "4M9uGl7iXdM0HLoIvGWhUVt9kNjfxHXVJVfObo6VG4CyPL5p9a0KrqIQgfuH8oog0stMrxll0Gy+QYo8HWRy9A==",
       "type": "package",
-      "path": "rawrabbit/2.0.0-beta8",
+      "path": "rawrabbit/2.0.0-rc5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net451/RawRabbit.dll",
         "lib/netstandard1.5/RawRabbit.dll",
-        "rawrabbit.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.2.0.0-rc5.nupkg.sha512",
         "rawrabbit.nuspec"
       ]
     },
-    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
-      "sha512": "1Ol7ThyJjqIUDTGuPXPTgNype6lCiy8IGp8Hqh/PUWZPYpYEnNip92BFAGsey9QoCfqw8nzPdW1/jk+Ic01BAg==",
+    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-rc5": {
+      "sha512": "zrFH4cuCUcxRzfgjk5Pn/aGH2KCnznt78F/LuIXLw0p13y28TDOgZ06DjlJUX+Z/ufgseE4pa0ItjjpNP8BfdA==",
       "type": "package",
-      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-beta8",
+      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-rc5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net451/RawRabbit.DependencyInjection.ServiceCollection.dll",
         "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll",
-        "rawrabbit.dependencyinjection.servicecollection.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.dependencyinjection.servicecollection.2.0.0-rc5.nupkg.sha512",
         "rawrabbit.dependencyinjection.servicecollection.nuspec"
       ]
     },
-    "RawRabbit.Operations.Publish/2.0.0-beta8": {
-      "sha512": "AE4amKO8dI276sFiWJb5nu8Y2raACZW40qZtub9bOZe34Noe32KL3AI6hs4pTkbEVwh/Bjo/f9uhHj7gjiOzig==",
+    "RawRabbit.Operations.Publish/2.0.0-rc5": {
+      "sha512": "4M7O4UsCRHxeIj7O35xGF73ijvg/ALR9ScWhWGIPIJGdoYFRh1k3jVRrba1e2ews04c7ctKKdtiBlWoHJBln9w==",
       "type": "package",
-      "path": "rawrabbit.operations.publish/2.0.0-beta8",
+      "path": "rawrabbit.operations.publish/2.0.0-rc5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net451/RawRabbit.Operations.Publish.dll",
         "lib/netstandard1.5/RawRabbit.Operations.Publish.dll",
-        "rawrabbit.operations.publish.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.operations.publish.2.0.0-rc5.nupkg.sha512",
         "rawrabbit.operations.publish.nuspec"
       ]
     },
-    "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
-      "sha512": "S7LJAH1fOOupMUwVH1n7jDHbpbbw3obLaRU6wFDzBtLuQ6CZOP/VcECDjnQmOlMYY4CY1WkNOF1+5OJBt+3UDA==",
+    "RawRabbit.Operations.Subscribe/2.0.0-rc5": {
+      "sha512": "naD0qHa1w8MZj7/A670APTNG/mON9Q5UxdUHGU4j5GuIahk6muou0oUqUb1bRhInmKuP3H62uhnvLBb8fD7feg==",
       "type": "package",
-      "path": "rawrabbit.operations.subscribe/2.0.0-beta8",
+      "path": "rawrabbit.operations.subscribe/2.0.0-rc5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net451/RawRabbit.Operations.Subscribe.dll",
         "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll",
-        "rawrabbit.operations.subscribe.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.operations.subscribe.2.0.0-rc5.nupkg.sha512",
         "rawrabbit.operations.subscribe.nuspec"
       ]
     },
@@ -6362,7 +6362,7 @@
       "Microsoft.AspNetCore >= 2.1.0",
       "Microsoft.AspNetCore.Hosting >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "RawRabbit >= 2.0.0-beta8"
+      "RawRabbit >= 2.0.0-rc5"
     ]
   },
   "packageFolders": {
@@ -6426,7 +6426,7 @@
           },
           "RawRabbit": {
             "target": "Package",
-            "version": "[2.0.0-beta8, )"
+            "version": "[2.0.0-rc5, )"
           }
         },
         "imports": [

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "f12fbc8f264e2acf0607a94a821dca880cb5f0e8"
+    "signature": "a606caa45f34d9baa4223a4c84b3852f84f95f95"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
       "LT.SO.Infra.CrossCutting.IoC/1.0.0": {
         "dependencies": {
           "AutoMapper": "6.2.2",
+          "LT.SO.Application": "1.0.0",
           "LT.SO.Domain.Gerencial": "1.0.0",
           "LT.SO.Infra.CrossCutting.AspNetFilters": "1.0.0",
           "LT.SO.Infra.CrossCutting.Bus": "1.0.0",
@@ -105,7 +106,7 @@
       "FluentValidation/7.5.2": {
         "dependencies": {
           "System.Collections.Concurrent": "4.3.0",
-          "System.ComponentModel.Annotations": "4.5.0",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.ComponentModel.Primitives": "4.3.0"
         },
         "runtime": {
@@ -622,7 +623,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.1.2",
           "Microsoft.Extensions.Localization": "2.1.1",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {
@@ -1038,7 +1039,7 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "Remotion.Linq": "2.2.0",
           "System.Collections.Immutable": "1.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.Diagnostics.DiagnosticSource": "4.5.0",
           "System.Interactive.Async": "3.1.1"
         },
@@ -1332,7 +1333,7 @@
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll": {
@@ -1345,7 +1346,7 @@
         "dependencies": {
           "Microsoft.Extensions.Identity.Core": "2.1.3",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "System.ComponentModel.Annotations": "4.5.0"
+          "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll": {
@@ -1693,7 +1694,7 @@
           }
         }
       },
-      "RawRabbit/2.0.0-beta8": {
+      "RawRabbit/2.0.0-rc5": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
           "RabbitMQ.Client": "5.0.1"
@@ -1705,10 +1706,10 @@
           }
         }
       },
-      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-rc5": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {
@@ -1717,9 +1718,9 @@
           }
         }
       },
-      "RawRabbit.Operations.Publish/2.0.0-beta8": {
+      "RawRabbit.Operations.Publish/2.0.0-rc5": {
         "dependencies": {
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.Operations.Publish.dll": {
@@ -1728,9 +1729,9 @@
           }
         }
       },
-      "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
+      "RawRabbit.Operations.Subscribe/2.0.0-rc5": {
         "dependencies": {
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll": {
@@ -2062,7 +2063,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ComponentModel.Annotations/4.5.0": {},
+      "System.ComponentModel.Annotations/4.7.0": {},
       "System.ComponentModel.Primitives/4.3.0": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
@@ -3150,6 +3151,18 @@
           }
         }
       },
+      "LT.SO.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "6.2.2",
+          "LT.SO.Domain.Gerencial": "1.0.0",
+          "LT.SO.Infra.CrossCutting.Identity": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.2",
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "runtime": {
+          "LT.SO.Application.dll": {}
+        }
+      },
       "LT.SO.Domain.Core/1.0.0": {
         "dependencies": {
           "FluentValidation": "7.5.2"
@@ -3186,10 +3199,10 @@
         "dependencies": {
           "LT.SO.Domain.Core": "1.0.0",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
-          "RawRabbit": "2.0.0-beta8",
-          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-beta8",
-          "RawRabbit.Operations.Publish": "2.0.0-beta8",
-          "RawRabbit.Operations.Subscribe": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5",
+          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-rc5",
+          "RawRabbit.Operations.Publish": "2.0.0-rc5",
+          "RawRabbit.Operations.Subscribe": "2.0.0-rc5"
         },
         "runtime": {
           "LT.SO.Infra.CrossCutting.Bus.dll": {}
@@ -4186,33 +4199,33 @@
       "path": "rabbitmq.client/5.0.1",
       "hashPath": "rabbitmq.client.5.0.1.nupkg.sha512"
     },
-    "RawRabbit/2.0.0-beta8": {
+    "RawRabbit/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gAXa06ZSBbNW4ykL4reUgNWIVoWoOeRW233smeluY0t/mtuBTbN6/Hh7YyvxdrNvNADhn+QvM2/GvY994tor5A==",
-      "path": "rawrabbit/2.0.0-beta8",
-      "hashPath": "rawrabbit.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-4M9uGl7iXdM0HLoIvGWhUVt9kNjfxHXVJVfObo6VG4CyPL5p9a0KrqIQgfuH8oog0stMrxll0Gy+QYo8HWRy9A==",
+      "path": "rawrabbit/2.0.0-rc5",
+      "hashPath": "rawrabbit.2.0.0-rc5.nupkg.sha512"
     },
-    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1Ol7ThyJjqIUDTGuPXPTgNype6lCiy8IGp8Hqh/PUWZPYpYEnNip92BFAGsey9QoCfqw8nzPdW1/jk+Ic01BAg==",
-      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-beta8",
-      "hashPath": "rawrabbit.dependencyinjection.servicecollection.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-zrFH4cuCUcxRzfgjk5Pn/aGH2KCnznt78F/LuIXLw0p13y28TDOgZ06DjlJUX+Z/ufgseE4pa0ItjjpNP8BfdA==",
+      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-rc5",
+      "hashPath": "rawrabbit.dependencyinjection.servicecollection.2.0.0-rc5.nupkg.sha512"
     },
-    "RawRabbit.Operations.Publish/2.0.0-beta8": {
+    "RawRabbit.Operations.Publish/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AE4amKO8dI276sFiWJb5nu8Y2raACZW40qZtub9bOZe34Noe32KL3AI6hs4pTkbEVwh/Bjo/f9uhHj7gjiOzig==",
-      "path": "rawrabbit.operations.publish/2.0.0-beta8",
-      "hashPath": "rawrabbit.operations.publish.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-4M7O4UsCRHxeIj7O35xGF73ijvg/ALR9ScWhWGIPIJGdoYFRh1k3jVRrba1e2ews04c7ctKKdtiBlWoHJBln9w==",
+      "path": "rawrabbit.operations.publish/2.0.0-rc5",
+      "hashPath": "rawrabbit.operations.publish.2.0.0-rc5.nupkg.sha512"
     },
-    "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
+    "RawRabbit.Operations.Subscribe/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-S7LJAH1fOOupMUwVH1n7jDHbpbbw3obLaRU6wFDzBtLuQ6CZOP/VcECDjnQmOlMYY4CY1WkNOF1+5OJBt+3UDA==",
-      "path": "rawrabbit.operations.subscribe/2.0.0-beta8",
-      "hashPath": "rawrabbit.operations.subscribe.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-naD0qHa1w8MZj7/A670APTNG/mON9Q5UxdUHGU4j5GuIahk6muou0oUqUb1bRhInmKuP3H62uhnvLBb8fD7feg==",
+      "path": "rawrabbit.operations.subscribe/2.0.0-rc5",
+      "hashPath": "rawrabbit.operations.subscribe.2.0.0-rc5.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
@@ -4466,12 +4479,12 @@
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/4.5.0": {
+    "System.ComponentModel.Annotations/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+      "sha512": "sha512-0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
     },
     "System.ComponentModel.Primitives/4.3.0": {
       "type": "package",
@@ -5095,6 +5108,11 @@
       "sha512": "sha512-Es4Uqf/sD56t1FETmzeuQx2APbBRKXcw+0bST2/gl0LuasAMJLaNmMucaEg+qMSK9xWUDfoKztqUcmsSTYw/RA==",
       "path": "yamldotnet.signed/4.2.1",
       "hashPath": "yamldotnet.signed.4.2.1.nupkg.sha512"
+    },
+    "LT.SO.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "LT.SO.Domain.Core/1.0.0": {
       "type": "project",

@@ -27,7 +27,7 @@ namespace LT.SO.Domain.Gerencial.Usuario.Services
 
         public void Adicionar(UsuarioModel userModel)
         {
-            var usuario = new UsuarioModel(userModel.Nome, userModel.CPF, userModel.Email, userModel.AspNetUserId.ToString());
+            var usuario = new UsuarioModel(userModel.Nome, userModel.CPF, userModel.Email, userModel.AspNetUserId);
             if (!ValidarUsuario(usuario)) return;
             if (!ChecarUsuarioExistente(usuario, "2")) return;
 

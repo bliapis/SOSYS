@@ -39,3 +39,5 @@ D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Dat
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Services.Common.pdb
 D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Application.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Api\bin\Debug\netcoreapp2.1\LT.SO.Application.pdb

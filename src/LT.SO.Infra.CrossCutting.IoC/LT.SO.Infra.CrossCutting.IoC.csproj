@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LT.SO.Application\LT.SO.Application.csproj" />
     <ProjectReference Include="..\LT.SO.Domain.Gerencial\LT.SO.Domain.Gerencial.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.AspNetFilters\LT.SO.Infra.CrossCutting.AspNetFilters.csproj" />
     <ProjectReference Include="..\LT.SO.Infra.CrossCutting.Bus\LT.SO.Infra.CrossCutting.Bus.csproj" />

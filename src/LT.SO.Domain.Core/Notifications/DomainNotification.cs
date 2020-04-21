@@ -10,6 +10,15 @@ namespace LT.SO.Domain.Core.Notifications
         public string Value { get; private set; }
         public int Version { get; private set; }
 
+        public DomainNotification(string key, string value, Guid aggregateId)
+        {
+            DomainNotificationId = Guid.NewGuid();
+            Key = key;
+            Value = value;
+            Version = 1;
+            AggregateId = aggregateId;
+        }
+
         public DomainNotification(string key, string value)
         {
             DomainNotificationId = Guid.NewGuid();

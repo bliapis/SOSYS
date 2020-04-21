@@ -1,4 +1,5 @@
 ﻿using LT.SO.Domain.Gerencial.Usuario.Commands;
+using LT.SO.Domain.Gerencial.Usuario.Events;
 using LT.SO.Services.Common.Host;
 
 namespace LT.SO.Services.Gerencial.Usuarios
@@ -10,6 +11,8 @@ namespace LT.SO.Services.Gerencial.Usuarios
             ServiceHost.Create<Startup>(args)
                 .UseRabbitMq()
                 .SubscribeToCommand<CreateUsuarioCommand>()
+                .SubscribeToEvent<UsuarioCreatedEvent>()
+                .SubscribeToEvent<CreateUsuarioRejectedEvent>()
                 .Build()
                 .Run();
         }

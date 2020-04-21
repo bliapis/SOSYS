@@ -2,9 +2,9 @@
 using System.Text;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Authorization;
@@ -25,6 +25,7 @@ using LT.SO.Infra.CrossCutting.IoC;
 using LT.SO.Infra.CrossCutting.AspNetFilters;
 using LT.SO.Infra.CrossCutting.Identity.Data;
 using LT.SO.Infra.CrossCutting.Identity.Authorization;
+using LT.SO.Domain.Gerencial.Usuario.Events;
 
 namespace LT.SO.Services.Api
 {
@@ -36,6 +37,7 @@ namespace LT.SO.Services.Api
         }
 
         public IConfiguration Configuration { get; }
+
         private const string SecretKey = "Regua$C0br4nc4&S3cr3t@T0k3nN";
         private readonly SymmetricSecurityKey _signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(SecretKey));
 
@@ -206,7 +208,7 @@ namespace LT.SO.Services.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(s =>
                 {
-                    s.SwaggerEndpoint("/swagger/v1/swagger.json", "Regua de Cobrança API v1.0");
+                    s.SwaggerEndpoint("/swagger/v1/swagger.json", "SO.SYS API v1.0");
                 });
             }
 

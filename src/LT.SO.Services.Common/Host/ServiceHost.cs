@@ -76,7 +76,7 @@ namespace LT.SO.Services.Common.Host
 
             public BusBuilder SubscribeToCommand<Command>() where Command : Message
             {
-                var handler = (IHandler<Command>)_webHost.Services.GetService(typeof(IHandler<Command>));
+                var handler = (IHandlerMS<Command>)_webHost.Services.GetService(typeof(IHandlerMS<Command>));
                 _bus.WithCommandHandlerAsync(handler);
 
                 return this;
@@ -84,7 +84,7 @@ namespace LT.SO.Services.Common.Host
 
             public BusBuilder SubscribeToEvent<Event>() where Event : Message
             {
-                var handler = (IHandler<Event>)_webHost.Services.GetService(typeof(IHandler<Event>));
+                var handler = (IHandlerMS<Event>)_webHost.Services.GetService(typeof(IHandlerMS<Event>));
                 _bus.WithEventHandlerAsync(handler);
 
                 return this;

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using LT.SO.Application.ViewModels.Gerencial.Usuario;
+using LT.SO.Domain.Gerencial.Usuario.Commands;
 using LT.SO.Domain.Gerencial.Usuario.Entities;
 
 namespace LT.SO.Application.AutoMapper
@@ -31,6 +32,10 @@ namespace LT.SO.Application.AutoMapper
             CreateMap<AddUsuarioViewModel, UsuarioModel>();
             CreateMap<UsuarioViewModel, UsuarioModel>();
             //CreateMap<UsuarioGrupoAcessoViewModel, UsuarioGrupoAcesso>();
+
+            //Commands
+            CreateMap<AddUsuarioViewModel, CreateUsuarioCommand>()
+                .ConstructUsing(c => new CreateUsuarioCommand(c.Usuario, c.Nome, c.CPF, c.Email, c.Senha));
             #endregion
         }
     }

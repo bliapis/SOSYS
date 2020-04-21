@@ -37,3 +37,7 @@ D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\obj\Debug\netcoreapp2.1\
 D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\obj\Debug\netcoreapp2.1\LT.SO.Services.Gerencial.Usuarios.csproj.CopyComplete
 D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\obj\Debug\netcoreapp2.1\LT.SO.Services.Gerencial.Usuarios.dll
 D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\obj\Debug\netcoreapp2.1\LT.SO.Services.Gerencial.Usuarios.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\bin\Debug\netcoreapp2.1\LT.SO.Infra.Data.Event.pdb
+D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\bin\Debug\netcoreapp2.1\LT.SO.Application.dll
+D:\Projects\SOSYS\src\LT.SO.Services.Gerencial.Usuarios\bin\Debug\netcoreapp2.1\LT.SO.Application.pdb

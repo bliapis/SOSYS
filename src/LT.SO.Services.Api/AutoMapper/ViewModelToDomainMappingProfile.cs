@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using LT.SO.Domain.Permissoes.Permissao.Entities;
 using LT.SO.Domain.Permissoes.GrupoAcesso.Entities;
+using LT.SO.Domain.Permissoes.Menu.Entities;
+using LT.SO.Domain.Gerencial.Usuario.Entities;
 using LT.SO.Services.Api.ViewModels.Gerencial.Permissoes;
 using LT.SO.Services.Api.ViewModels.Gerencial.GrupoAcesso;
 using LT.SO.Services.Api.ViewModels.Gerencial.Menu;
-using LT.SO.Domain.Permissoes.Menu.Entities;
-using LT.SO.Services.Api.ViewModels.Gerencial.Usuario;
-using LT.SO.Domain.Gerencial.Usuario.Entities;
+using LT.SO.Application.ViewModels.Gerencial.Usuario;
 
 namespace LT.SO.Services.Api.AutoMapper
 {
