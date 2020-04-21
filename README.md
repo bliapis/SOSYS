@@ -27,12 +27,17 @@ Obs: Swagger instalado na API, features de cadastro de usuário e login concluí
 
 ### Roadmap 1
 Ok - Alterar o Banco de LOGS para MongoDB
+
 Ok - Aplicar CQRS no projeto a partir do Domain "Gerencial", nas funcionalidades básicas do usuário.
   
   Ok -- Salvar os eventos lançados no MongoDb
+  
 Ok - Implementar RabbitMQ - Existe apenas um ServiceBus in memory, utilizar o client do RabbitMQ (RawRabbit) para criar um novo.
+
 Ok - Criar o Service para fazer subscribe nos tópicos do Rabbit, relacionados ao módulo Gerencial.
+
 Ok - Criar o handler e persistir as informações 
+
 - Dockerizing
 
 ### Roadmap 2
