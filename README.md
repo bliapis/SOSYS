@@ -12,6 +12,18 @@ seniors, que gostariam de se atualizar e aprender alguns dos conceitos aplicados
 Nesse projeto foram aplicados diversos conceitos e ferramentas como: MVC, DDD, TDD, Web API, JWT, Identity (isolado), Logs, IoC, 
 swagger, entre outros.
 
+#### Como Executar
+1 - Instale o Docker
+
+2 - Inicie o mongo (docker run -d p- 27017:27017 mongo)
+
+3 - Inicie o rabbit (docker run -d --hostname my-rabbit --name rabbit13 -p 8080:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3-management)
+
+4 - Inicie a API: LT.SO.Services.Api
+
+5 - Inicie o service: LT.SO.Services.Gerencial.Usuarios
+Obs: Swagger instalado na API, features de cadastro de usuário e login concluídas.
+
 ### Roadmap 1
 Ok - Alterar o Banco de LOGS para MongoDB
 Ok - Aplicar CQRS no projeto a partir do Domain "Gerencial", nas funcionalidades básicas do usuário.
@@ -21,14 +33,6 @@ Ok - Implementar RabbitMQ - Existe apenas um ServiceBus in memory, utilizar o cl
 Ok - Criar o Service para fazer subscribe nos tópicos do Rabbit, relacionados ao módulo Gerencial.
 Ok - Criar o handler e persistir as informações 
 - Dockerizing
-
-#### Como Esecutar
-1 - Instale o Docker
-2 - Inicie o mongo (docker run -d p- 27017:27017 mongo)
-3 - Inicie o rabbit (docker run -d --hostname my-rabbit --name rabbit13 -p 8080:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3-management)
-4 - Inicie a API: LT.SO.Services.Api
-5 - Inicie o service: LT.SO.Services.Gerencial.Usuarios
-Obs: Swagger instalado na API, features de cadastro de usuário e login concluídas.
 
 ### Roadmap 2
 - Criar uma nova unidade de negócio na aplicação para criar contas bancárias e realizar transferências.
